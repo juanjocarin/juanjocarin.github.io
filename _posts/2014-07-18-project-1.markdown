@@ -1,0 +1,15 @@
+---
+title: Dreams
+subtitle: Website Design
+layout: default
+modal-id: 1
+date: 2014-07-18
+img: dreams.png
+thumbnail: dreams-thumbnail.png
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+description: '<em>Capstone</em> project: a scalable cloud-based video monitoring system (with motion detection, face counting, and image recognition) using Raspberry Pis. Most of the processing (using Python, OpenCV, and TensorFlow) is done in the cloud, so the computing power of the Raspberry Pi is not a limitation.'
+
+---

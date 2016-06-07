@@ -1,0 +1,35 @@
+url: http://juanjocarin.github.io
+baseurl: 
+
+# Site settings
+title: Juan Jose Carin
+email: juanjose.carin@gmail.com
+description: "Personal website of Juan Jose Carin (aka Juanjo Carin), with info about me and my TECI and MIDS projects while preparing myself to be a Data Scientist."
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: envelope
+    url: mailto:juanjose.carin@gmail.com
+    description: juanjose.carin@gmail.com
+  #- title: file-pdf-o 
+  #  url: https://drive.google.com/file/d/0B3cqLO1xs1GId3U5b3NsLVVBX1E/view?usp=sharing
+  #  description: Resume
+  - title: phone
+    url: tel:+16503364590
+    description: (650)-336-4590
+  - title: linkedin
+    url: https://www.linkedin.com/in/juanjosecarin
+    description: www.linkedin.com/in/juanjosecarin
+  - title: github
+    url: http://github.com/juanjocarin
+    description: github.com/juanjocarin
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 455 W Evelyn Ave - Ste 1404
+  - line: Mountain View, CA 94041
+
+# Build settings
+markdown: kramdown
+permalink: pretty

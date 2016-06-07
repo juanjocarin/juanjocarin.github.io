@@ -1,0 +1,55 @@
+<!-- Welcome Section -->
+
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Welcome</h2>
+                    <!--<h3 class="section-subheading text-muted">About Me.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-justify">
+                    <!--class="large"-->
+                    <p>I'm Juan Jose (or just Juanjo). Here I'd like to share a little <a class="page-scroll" href="#bio">about me</a> and some of the projects I've worked in to obtain my last two master's degrees: an academic one in <strong><a href="#TECI">Statistical &amp; Computational Information Processing</a></strong> at <a href="http://www.upm.es/portal/site/institucional/template.PAGE/menuitem.fe392479f15c1fe7a23dd510907c46a8/?javax.portlet.tpst=d4adc2b01545fee7a23dd510907c46a8&amp;javax.portlet.prp_d4adc2b01545fee7a23dd510907c46a8=cod%3D9.7%26cod2%3D9%26orden%3DDENOMINACION_AMBITO%26opcion%3Ddetalle%26mostrar%3DDENOMINACION&amp;javax.portlet.begCacheTok=com.vignette.cachetoken&amp;javax.portlet.endCacheTok=com.vignette.cachetoken" target="_blank">UPM</a>, and a professional one in <strong><a href="#MIDS">Information and Data Science</a></strong> at <a href="https://datascience.berkeley.edu/academics/curriculum/" target="_blank">UC Berkeley</a>.</p>
+                </div>
+            </div>
+            <div class="row">
+            <h3 class="section-subheading text-center" id="contact">CONTACT INFO</h3>
+            </div>
+            <div class="row">
+            <!--<div class="col-md-2">
+            </div>
+            <div class="col-md-4">  
+                <div class="text-justify list-inline social-buttons"><a target="_blank" href="mailto:juanjose.carin@gmail.com"><i class="fa fa-envelope"></i></a> &emsp;<a target="_blank" href="mailto:juanjose.carin@gmail.com">juanjose.carin@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-md-4">  
+                <div class="text-left list-inline social-buttons"><a target="_blank" href="https://www.linkedin.com/in/juanjosecarin"><i class="fa fa-linkedin"></i></a> &emsp;<a target="_blank" href="https://www.linkedin.com/in/juanjosecarin">www.linkedin.com/in/juanjosecarin</a>
+                </div>
+            </div>
+                        <div class="col-md-3">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-2">  
+            </div>
+            <div class="col-md-4">  
+                <div class="text-justify list-inline social-buttons"><a target="_blank" href="tel:+16503364590"><i class="fa fa-phone"></i></a> &emsp;<a target="_blank" href="tel:+16503364590">(650)-336-4590</a>
+                </div>
+            </div>
+            <div class="col-md-4">  
+                <div class="text-justify list-inline social-buttons"><a target="_blank" href="http://github.com/juanjocarin"><i class="fa fa-github"></i></a> &emsp;<a target="_blank" href="http://github.com/juanjocarin">github.com/juanjocarin</a>
+                </div>
+            </div>-->
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">  
+            {% for network in site.social %}
+                <div class="row text-justify list-inline social-buttons"><a target="_blank" href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a> &emsp;<a target="_blank" href="{{ network.url }}">{{ network.description }}</a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+        </div>
+    </section>
