@@ -30,8 +30,32 @@ p {
     line-height: 1.75;
 }
 
+.smaller {
+    font-size: 13px;
+}
+
 p.large {
     font-size: 16px;
+}
+
+.fixed3 {
+    height: 3em; /* 1em for each visible line */
+    overflow: hidden;
+}
+
+.fixed45 {
+    height: 4.5em; /* 1em for each visible line */
+    overflow: hidden;
+}
+
+.fixed7 {
+    height: 7em; /* 1em for each visible line */
+    overflow: hidden;
+}
+
+.fixed525 {
+    height: 5.25em; /* 1em for each visible line */
+    overflow: hidden;
 }
 
 a,
@@ -373,6 +397,7 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     font-size: 16px;
+    line-height: 1.5;
     text-transform: none;
 }
 
