@@ -4,8 +4,7 @@ baseurl:
 # Site settings
 title: Juan Jose Carin
 email: juanjose.carin@gmail.com
-description: "Personal website of Juan Jose Carin (aka Juanjo Carin), with info about me and my TECI and MIDS projects while preparing myself to be a Data Scientist."
-
+description: "Portfolio website of Juan Jose (aka Juanjo) Carin, data scientist, with info about some of my projects while earning my master's degrees in Information and Data Science, and Statistical and Computational Information Processing."
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

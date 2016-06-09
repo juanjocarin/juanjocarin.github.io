@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Juan Jose Carin</title>
-    <description>Personal website of Juan Jose Carin (aka Juanjo Carin), with info about me and my TECI and MIDS projects while preparing myself to be a Data Scientist.</description>
+    <description>Portfolio website of Juan Jose (aka Juanjo) Carin, data scientist, with info about some of my projects while earning my master&#39;s degrees in Information and Data Science, and Statistical and Computational Information Processing.</description>
     <link>http://juanjocarin.github.io/</link>
     <atom:link href="http://juanjocarin.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 09 Jun 2016 03:28:51 -0700</pubDate>
-    <lastBuildDate>Thu, 09 Jun 2016 03:28:51 -0700</lastBuildDate>
+    <pubDate>Thu, 09 Jun 2016 12:58:05 -0700</pubDate>
+    <lastBuildDate>Thu, 09 Jun 2016 12:58:05 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
