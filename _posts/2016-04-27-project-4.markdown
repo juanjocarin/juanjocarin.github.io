@@ -1,0 +1,22 @@
+---
+title: Redefining the job search process
+subtitle: 'Information retrieval<br>Hadoop, Hive, Spark, Python, AWS EC2, Tableau'
+layout: default
+modal-id: 4
+date: 2016-04-27
+img: fa-map-marker
+thumbnail: fa-map-marker
+project-date: December 2015
+course: Storing and Retrieving Data
+master: Information and Data Science
+keywords: Information retrieval
+tools: Hadoop, Hive, Spark, Python, AWS EC2, Tableau
+description: 'A pipeline that combines data from Indeed API and the U.S. Census Bureau to select the best locations for data scientists based on the number of job postings, housing cost, etc.'
+link1: https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data
+link1-text: GitHub
+link2: https://drive.google.com/file/d/0B3cqLO1xs1GIM3RWNWRFZXRGR28/view
+link2-text: Paper
+link3: http://juanjocarin.github.io/W205-Storing-and-Retrieving-Data/
+link3-text: Website
+
+---

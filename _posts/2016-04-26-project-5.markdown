@@ -1,0 +1,20 @@
+---
+title: A fresh perspective on Citi Bike
+subtitle: 'Data visualization<br>Tableau, SQLite'
+layout: default
+modal-id: 5
+date: 2016-04-26
+img: fa-bicycle
+thumbnail: fa-bicycle
+project-date: August 2015
+course: Data Visualization and Communication
+master: Information and Data Science
+keywords: Data visualization
+tools: Tableau, SQLite
+description: 'An interactive website to visualize NYC Citi Bike bicycle sharing service.'
+link1: http://juanjocarin.github.io/Citibike-viz/
+link1-text: Website
+link2: https://github.com/juanjocarin/Citibike-viz
+link2-text: GitHub
+
+---

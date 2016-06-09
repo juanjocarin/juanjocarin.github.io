@@ -1,0 +1,18 @@
+---
+title: Forest Cover Type Prediction
+subtitle: 'kNN, NB, Random Forests, SVMs, SGD, GMMs, Feature engineering<br>Python, Scikit-Learn, Matplotlib'
+layout: default
+modal-id: 3
+date: 2016-04-28
+img: fa-tree
+thumbnail: fa-tree
+project-date: August 2015
+course: Machine Learning
+master: Information and Data Science
+keywords: kNN, NB, Random Forests, SVMs, SGD, GMMs, Feature engineering
+tools: Python, Scikit-Learn, Matplotlib
+description: 'Kaggle competition</a>: predictions of the predominant kind of tree cover in four wilderness areas located in the Roosevelt National Forest of northern Colorado, from strictly cartographic variables such as elevation and soil type.'
+link1: https://github.com/juanjocarin/W207-Machine-Learning/blob/master/Forest/W207-Carin_Mahmud_Sakhamuri.ipynb
+link1-text: IPython Notebook
+
+---

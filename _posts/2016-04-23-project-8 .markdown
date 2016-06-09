@@ -1,0 +1,18 @@
+---
+title: Prediction of customer churn for a mobile network carrier
+subtitle: 'Neural networks, Tree decisions, Logistic regression<br>SAS Enterprise Miner'
+layout: default
+modal-id: 8
+date: 2016-04-23
+img: fa-mobile
+thumbnail: fa-mobile
+project-date: February 2014
+course: Data Mining
+master: Statistical and Computational Information Processing
+keywords: Neural networks, Tree decisions, Logistic regression
+tools: SAS Enterprise Miner
+description: 'Predictions from a sample of 45,000+ customers.'
+link1: https://drive.google.com/file/d/0B3cqLO1xs1GIQXJ5OXhtcUYwMWs/view
+link1-text: Paper (Spanish)
+
+---

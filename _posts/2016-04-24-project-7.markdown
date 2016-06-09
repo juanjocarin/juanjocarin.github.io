@@ -1,0 +1,22 @@
+---
+title: Experimental design to measure the impact of online advertising on the sales of a car manufacturer’s dealer network
+subtitle: 'Research design, Experiments, Wavelets, Clustering<br>R'
+layout: default
+modal-id: 7
+date: 2016-04-24
+img: fa-youtube
+thumbnail: fa-youtube
+project-date: September 2014
+course: Capstone
+master: Statistical and Computational Information Processing
+keywords: Research design, Experiments, Wavelets, Clustering
+tools: R
+description: 'A project for Google (working at Conento) to measure the effect of YouTube ads. Responsible for the whole project (excluding the econometric model to estimate the increase in advertising spend in the test group): designed a matched-pair, cluster-randomized experiment, which involved selecting the test and control groups from a sample of 50+ cities in Spain based on their sales-wise similarity over time.'
+link1: https://drive.google.com/file/d/0B3cqLO1xs1GITWtUdVJjQnhEWVk/view
+link1-text: Paper
+link2: https://drive.google.com/file/d/0B3cqLO1xs1GIX0tQc3JfMXQ1c0k/view
+link2-text: Slides (Spanish)
+link3: https://github.com/juanjocarin/TECI-Capstone
+link3-text: GitHub
+
+---

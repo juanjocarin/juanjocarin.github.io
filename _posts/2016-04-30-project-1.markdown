@@ -1,0 +1,22 @@
+---
+title: SmartCam
+subtitle: 'Computer Vision, Scalable, Classification<br>Python, OpenCV, TensorFlow, AWS (ECS, S3, DynamoDB)'
+layout: default
+modal-id: 1
+date: 2016-04-30
+img: fa-video-camera
+thumbnail: fa-video-camera
+project-date: April 2016
+course: Capstone
+master: Information and Data Science
+keywords: Computer Vision, Scalable, Classification
+tools: Python, OpenCV, TensorFlow, AWS (ECS, S3, DynamoDB), Flask, JavaScript, Google Charts
+description: 'A scalable cloud-based video monitoring system (with motion detection, face counting, and image recognition) using Raspberry Pis. Most of the processing is done in the cloud, so the computing power of the Raspberry Pi is not a limitation.'
+link1: https://smart-cam.github.io/
+link1-text: Website
+link2: https://github.com/smart-cam/smart-cam
+link2-text: Backend Code
+link3: https://github.com/smart-cam/smart-cam.github.io
+link3-text: Frontend Code
+
+---

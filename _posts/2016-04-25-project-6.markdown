@@ -1,0 +1,20 @@
+---
+title: Investigating the Effect of Competition on the Ability to Solve Arithmetic Problems
+subtitle: 'Causal inference (Experiments, Heterogeneous treatment effects, Attrition)<br>R'
+layout: default
+modal-id: 6
+date: 2016-04-25
+img: fa-flask
+thumbnail: fa-flask
+project-date: April 2015
+course: Field Experiments
+master: Information and Data Science
+keywords: Causal inference (Experiments, Heterogeneous treatment effects, Attrition)
+tools: R
+description: 'A randomized controlled experiment in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).'
+link1: https://drive.google.com/file/d/0B3cqLO1xs1GISDlFZDlmX0ZKem8/view
+link1-text: Paper
+link2: https://github.com/juanjocarin/W241-Field-Experiments/tree/master/Final%20Project
+link2-text: GitHub
+
+---

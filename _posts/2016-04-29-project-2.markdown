@@ -1,0 +1,20 @@
+---
+title: Shortest Path and PageRank algorithms applied to the Wikipedia graph dataset
+subtitle: 'Shortest path, PageRank<br>MrJob, Python, AWS EC2, AWS S3'
+layout: default
+modal-id: 2
+date: 2016-04-29
+img: fa-wikipedia-w
+thumbnail: fa-wikipedia-w
+project-date: November 2015
+course: Machine Learning at Scale
+master: Information and Data Science
+keywords: Shortest path, PageRank
+tools: MrJob, Python, AWS EC2, AWS S3
+description: 'Two of the assignments of the course, using with a graph dataset of almost half a million nodes.'
+link1: https://github.com/juanjocarin/W261-Machine-Learning-At-Scale/blob/master/Week07-MrJob/MIDS-W261-2015-HWK-Week07-CarinLlopSatpati-groupZ.ipynb
+link1-text: Shortest Path
+link2: https://github.com/juanjocarin/W261-Machine-Learning-At-Scale/blob/master/Week09-MrJob/MIDS-W261-2015-HWK-Week09-CarinLlopSatpati-groupZ.ipynb
+link2-text: PageRank
+
+---

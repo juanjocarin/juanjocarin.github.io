@@ -27,6 +27,22 @@ p {
     font-size: 13px;
 }
 
+.large {
+    font-size: 16px;
+}
+
+.larger {
+    font-size: 18px;
+}
+
+.tab1 {
+    padding-left:3em;
+}
+
+.tab2 {
+    padding-left:4em;
+}
+
 p.large {
     font-size: 16px;
 }
@@ -107,7 +123,8 @@ h6 {
     border-color: #{{ site.data.template.color.primary }};
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 400;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
 }

@@ -1,0 +1,18 @@
+---
+title: Different models of Harmonized Index of Consumer Prices (HICP) in Spain
+subtitle: 'ARIMA, Transfer functions<br>SPSS, Demetra+'
+layout: default
+modal-id: 9
+date: 2016-04-22
+img: fa-money
+thumbnail: fa-money
+project-date: February 2014
+course: Time Series
+master: Statistical and Computational Information Processing
+keywords: ARIMA, Transfer functions
+tools: SPSS, Demetra+
+description: 'Forecasts based on exponential smoothing, ARIMA, and transfer function (using petrol price as independent variable) models.'
+link1: https://drive.google.com/file/d/0B3cqLO1xs1GIT0poekFhNzR4Nlk/view
+link1-text: Paper (Spanish)
+
+---
