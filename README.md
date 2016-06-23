@@ -111,61 +111,47 @@ I am a business person, so I am most interested in applying experiments and mach
 
 + 2016: SmartCam (https://smart-cam.github.io/)
     
-    Capstone
-
-    Python, OpenCV, TensorFlow, AWS (EC2, S3, DynamoDB)
-
-    A scalable cloud-based video monitoring system with Raspberry Pis, that features motion detection, face counting, and image recognition.
+    + Capstone
+    + Python, OpenCV, TensorFlow, AWS (EC2, S3, DynamoDB)
+    + A scalable cloud-based video monitoring system with Raspberry Pis, that features motion detection, face counting, and image recognition.
  
 + 2015: Implementation of the shortest path (https://goo.gl/QKYSdC) and PageRank (https://goo.gl/KLXrcL) algorithms using the Wikipedia graph dataset
     
-    Machine Learning at Scale
-
-    MrJob, Python, AWS EC2, AWS S3
-
-    Using a graph dataset of almost half a million nodes.  
+    + Machine Learning at Scale
+    + MrJob, Python, AWS EC2, AWS S3
+    + Using a graph dataset of almost half a million nodes.  
    
 + 2015: Forest Cover Type Prediction (https://goo.gl/UJhfqh)
     
-    Machine Learning
-
-    Python, Scikit-Learn, Matplotlib
-
-    A Kaggle competition: predictions of the predominant kind of tree cover, from strictly cartographic variables such as elevation and soil type, using random forests, SVMs, kNNs, Naïve Bayes, Gradient Descent, GMMs...
+    + Machine Learning
+    + Python, Scikit-Learn, Matplotlib
+    + A Kaggle competition: predictions of the predominant kind of tree cover, from strictly cartographic variables such as elevation and soil type, using random forests, SVMs, kNNs, Naïve Bayes, Gradient Descent, GMMs...
 
 + 2015: Redefining the job search process (https://goo.gl/8yeXo3)
     
-    Storing and Retrieving Data
-
-    Hadoop, Hive, Spark, Python, AWS EC2, Tableau
-
-    A pipeline that combines data from Indeed API and the U.S. Census Bureau to select the best locations for data scientists based on the number of job postings, housing cost, etc.
+    + Storing and Retrieving Data
+    + Hadoop, Hive, Spark, Python, AWS EC2, Tableau
+    + A pipeline that combines data from Indeed API and the U.S. Census Bureau to select the best locations for data scientists based on the number of job postings, housing cost, etc.
     
 + 2015: A fresh perspective on Citi Bike (http://goo.gl/WYrgwJ)
     
-    Data Visualization and Communication
-
-    Tableau, SQLite
-
-    An interactive website to visualize NYC Citi Bike bicycle sharing service.
+    + Data Visualization and Communication
+    + Tableau, SQLite
+    + An interactive website to visualize NYC Citi Bike bicycle sharing service.
 
 + 2015: Investigating the Effect of Competition on the Ability to Solve Arithmetic Problems (https://goo.gl/UhZznO)
     
-    Field Experiments
-    
-    R
-
-    A randomized controlled experiment in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).
+    + Field Experiments
+    + R
+    + A randomized controlled experiment in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).
 
 ### M.S. in Statistical and Computational Information Processing
 
 + 2014: Experimental design to measure the impact of online advertising on the sales of a car manufacturer's dealer network (https://goo.gl/15mW5V)
     
-    Capstone
-
-    R
-
-    Working for Conento: a project for Google Spain to measure the effect of YouTube ads. Designed a matched-pair, cluster-randomized experiment, which involved selecting the test and control groups from a sample of 50+ cities in Spain based on their sales-wise similarity over time.
+    + Capstone
+    + R
+    + Working for Conento: a project for Google Spain to measure the effect of YouTube ads. Designed a matched-pair, cluster-randomized experiment, which involved selecting the test and control groups from a sample of 50+ cities in Spain based on their sales-wise similarity over time.
 
 + 2014: Prediction of customer churn for a mobile network carrier (https://goo.gl/0TdvqM)
     
