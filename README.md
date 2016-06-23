@@ -45,8 +45,64 @@ I am a business person, so I am most interested in applying experiments and mach
 + 2005: M.S. IN TELECOMMUNICATION ENGINEERING - Universidad Politécnica de Madrid (GPA: 3.03)
     
     Focus Area: Radio communication systems (radar and mobile).
-    
+
     Fellowship: First year at University, due to Honors obtained last year at high school.
+
+
+## SKILLS
+
++ Spanish (native speaker)
++ R (advanced), Python, SQL, Matlab (proficient)
++ Hadoop, MrJob (proficient), Spark, Storm (basic)
++ Tableau, ggplot2 (proficient), D3.js (basic)
++ SPSS (proficient), SAS, EViews, Demetra+ (basic)
++ AWS S3, HDFS (proficient), Hive (basic)
++ Hugin, Gephi, Neo4j (basic)
++ MapInfo, QGIS (basic)
++ Git, Bash (proficient)
+
+
+## EXPERIENCE
+
++ Jan. 2016 - Mar. 2016: DATA SCIENTIST
+    
+    Data Science - CONENTO - Madrid, Spain (remotely)
+    
+    DATA SCIENTIST
+
+    + Designed and implemented the ETL pipeline for a predictive model of traffic on major roads in Eastern Spain (a project for the Spanish government).
+
++ Jun. 2014 - Sep. 2014: RESEARCHER
+    
+    Data Science - CONENTO - Madrid, Spain
+
+    + Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer’s dealer network.
+
++ Feb. 2009 - Aug. 2013: HEAD OF SALES, SPAIN & PORTUGAL - TEST & MEASUREMENT DEPARTMENT
+    
+    Management, Sales - YOKOGAWA - Madrid, Spain
+
+    + Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets, improving customer training and service quality, and promoting less popular regions and product lines.
+    + Awarded with "100% sales" prize in 2010 and 2011.
+
++ Apr. 2008 - Jan. 2009: SALES ENGINEER - TEST & MEASUREMENT DEPARTMENT
+    
+    YOKOGAWA - Sales - Madrid, Spain
+
+    + Promoted to head of sales after 5 months leading the sales team.
+
++ Sep. 2004 - Mar. 2008: SALES & APPLICATION ENGINEER
+    
+    AYSCOM - Sales - Madrid, Spain
+
+    + Exceeded sales target every year from 2005 to 2007 (achieved 60% of the target in the first 3 months of 2008).
+
++ Jul. 2002 - Jun. 2004: TUTOR OF PHYSICS, DIFFERENTIAL AND INTEGRAL CALCULUS, AND DIGITAL ELECTRONIC CIRCUITS
+    
+    ACADEMIA UNIVERSITARIA - Education - Madrid, Spain
+
+    + Highest-rated professor in student surveys, in 4 of the 6 terms.
+    + Increased ratio of students passing the course by 25%.
 
 
 ## PROJECTS
@@ -94,17 +150,6 @@ I am a business person, so I am most interested in applying experiments and mach
     Final project of the Time Series course: forecasts based on exponential smoothing, ARIMA, and transfer  function (using petrol price as independent variable) models, using SPSS (and Demetra+).
 
 
-## SOFTWARE/TOOLS
-
-+ Python, R
-+ Spark, Hadoop, MrJob, Storm
-+ SQL, Hive, HDFS
-+ Tableau, D3.js
-+ AWS, Bash, Git
-+ SPSS, SAS, Matlab
-+ EViews, Demetra+
-+ Hugin, Gephi, Neo4j
-+ OpenRefine, MapInfo, QGIS
 
 
 ## EXPERIENCE
@@ -159,59 +204,8 @@ I am a business person, so I am most interested in applying experiments and mach
 
 
 
-
-
-
-
-
-
-2005
-Universidad Politécnica de Madrid
-M.S. in Telecommunication Engineering
-GPA: 3.03 
-Focus Area: Radio communication systems (radar and mobile).
-Fellowship: First year at University, due to Honors obtained last year at high school.
-Skills
  
-•   Spanish (native speaker)
-•   R (advanced), Python, SQL, Matlab (proficient)
-•   Hadoop, MrJob (proficient), Spark, Storm (basic)
-•   Tableau, ggplot2 (proficient), D3.js (basic)
-•   SPSS (proficient), SAS, EViews, Demetra+ (basic)
-•   AWS S3, HDFS (proficient), Hive (basic)
-•   Hugin, Gephi, Neo4j, MapInfo, QGIS (basic)
-•   Git, Bash (proficient)
  
-Experience
-Jan. 2016 – Mar. 2016   Data Scientist
-Data Science    Conento Madrid, Spain (remotely)
-•   Designed and implemented the ETL pipeline for a predictive model of traffic on major roads in Eastern Spain (a project for the Spanish government)..
-Jun. 2014 – Sep. 2014   Researcher
-Data Science    Conento Madrid, Spain
-•   Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer’s dealer network.
-Feb. 2009 – Aug. 2013   Head of Sales, Spain & Portugal – Test & Measurement department
-Management, Sales   Yokogawa    Madrid, Spain
-•   Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets, improving customer training and service quality, and promoting less popular regions and product lines.
-•   Awarded with "100% sales" prize in 2010 and 2011.
- 
-Juan Jose Carin
-Data Scientist
-
-Mountain View, CA 94041
-    650-336-4590    |   juanjose.carin@gmail.com
-    linkedin.com/in/juanjosecarin   |   juanjocarin.github.io  
-
- 
-Apr. 2008 – Jan. 2009   Sales Engineer – Test & Measurement department
-Sales   Yokogawa    Madrid, Spain
-•   Promoted to head of sales after 5 months leading the sales team. 
-Sep. 2004 – Mar. 2008   Sales & Application Engineer
-Sales   Ayscom  Madrid, Spain
-•   Exceeded sales target every year from 2005 to 2007 (achieved 60% of the target in the first 3 months of 2008).
-Jul. 2002 – Jun. 2004   Tutor of Physics, Differential and Integral Calculus, and Digital Electronic Circuits
-Education   Academia Universitaria  Madrid, Spain
-•   Highest-rated professor in student surveys, in 4 of the 6 terms.
-•   Increased ratio of students passing the course by 25%.
 Projects    See juanjocarin.github.io for additional information 
 2016    SmartCam
  
