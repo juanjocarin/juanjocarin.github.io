@@ -9,7 +9,7 @@
 
 ## PROFESSIONAL PROFILE
 
-After 9 years working in sales, in the Test & Measurement industry, I pursued my dream of being a data scientist: of digging down deep in the data (lots of them and of all kinds) and being able to extract unobserved patterns, infer causality through randomized experiments, and make reliable predictions and well-informed decisions.
+After 9 years working in sales, almost 5 of them in a management position, I pursued my dream of being a data scientist: of digging down deep in the data (lots of them and of all kinds) and being able to extract unobserved patterns, infer causality through randomized experiments, and make reliable predictions and well-informed decisions.
 
 I am a business person, so I am most interested in applying experiments and machine learning/data mining techniques to marketing and customer behavior.
 
@@ -18,11 +18,29 @@ I am a business person, so I am most interested in applying experiments and mach
 
 + 2016: MASTER OF INFORMATION AND DATA SCIENCE - University of California, Berkeley (GPA: 3.93)
     
-    Relevant courses: Research Design and Applications for Data Analysis, Data Visualization and Communication, Exploring and Analyzing Data, Applied Regression and Time Series Analysis, Field Experiments, Storing and Retrieving Data, Machine Learning, and Machine Learning at Scale.
+    Relevant courses:
+    + Machine Learning
+    + Machine Learning at Scale
+    + Storing and Retrieving Data
+    + Field Experiments
+    + Applied Regression and Time Series Analysis
+    + Exploring and Analyzing Data
+    + Data Visualization and Communication
+    + Research Design and Applications for Data Analysis
 
 + 2014: M.S. IN STATISTICAL AND COMPUTATIONAL INFORMATION PROCESSING - Universidad Politécnica de Madrid (GPA: 3.69)
     
-    Relevant courses: Regression and Prediction Methods, Multivariate Analysis, Optimization Techniques, Monte Carlo Techniques, Numerical Methods in Finance, Stochastic Models in Finance, Bayesian Networks, Neural Networks and Statistical Learning, Time Series, and Data Mining.
+    Relevant courses:
+    + Data Mining
+    + Multivariate Analysis
+    + Time Series
+    + Neural Networks and Statistical Learning
+    + Regression and Prediction Methods
+    + Optimization Techniques
+    + Monte Carlo Techniques
+    + Numerical Methods in Finance
+    + Stochastic Models in Finance
+    + Bayesian Networks 
 
 + 2005: M.S. IN TELECOMMUNICATION ENGINEERING - Universidad Politécnica de Madrid (GPA: 3.03)
     
@@ -128,3 +146,121 @@ I am a business person, so I am most interested in applying experiments and mach
     TUTOR OF PHYSICS, DIFFERENTIAL AND INTEGRAL CALCULUS, AND DIGITAL ELECTRONIC CIRCUITS
     
     + Highest-rated professor in student surveys, in 4 of the 6 terms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2005
+Universidad Politécnica de Madrid
+M.S. in Telecommunication Engineering
+GPA: 3.03 
+Focus Area: Radio communication systems (radar and mobile).
+Fellowship: First year at University, due to Honors obtained last year at high school.
+Skills
+ 
+•   Spanish (native speaker)
+•   R (advanced), Python, SQL, Matlab (proficient)
+•   Hadoop, MrJob (proficient), Spark, Storm (basic)
+•   Tableau, ggplot2 (proficient), D3.js (basic)
+•   SPSS (proficient), SAS, EViews, Demetra+ (basic)
+•   AWS S3, HDFS (proficient), Hive (basic)
+•   Hugin, Gephi, Neo4j, MapInfo, QGIS (basic)
+•   Git, Bash (proficient)
+ 
+Experience
+Jan. 2016 – Mar. 2016   Data Scientist
+Data Science    Conento Madrid, Spain (remotely)
+•   Designed and implemented the ETL pipeline for a predictive model of traffic on major roads in Eastern Spain (a project for the Spanish government)..
+Jun. 2014 – Sep. 2014   Researcher
+Data Science    Conento Madrid, Spain
+•   Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer’s dealer network.
+Feb. 2009 – Aug. 2013   Head of Sales, Spain & Portugal – Test & Measurement department
+Management, Sales   Yokogawa    Madrid, Spain
+•   Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets, improving customer training and service quality, and promoting less popular regions and product lines.
+•   Awarded with "100% sales" prize in 2010 and 2011.
+ 
+Juan Jose Carin
+Data Scientist
+
+Mountain View, CA 94041
+    650-336-4590    |   juanjose.carin@gmail.com
+    linkedin.com/in/juanjosecarin   |   juanjocarin.github.io  
+
+ 
+Apr. 2008 – Jan. 2009   Sales Engineer – Test & Measurement department
+Sales   Yokogawa    Madrid, Spain
+•   Promoted to head of sales after 5 months leading the sales team. 
+Sep. 2004 – Mar. 2008   Sales & Application Engineer
+Sales   Ayscom  Madrid, Spain
+•   Exceeded sales target every year from 2005 to 2007 (achieved 60% of the target in the first 3 months of 2008).
+Jul. 2002 – Jun. 2004   Tutor of Physics, Differential and Integral Calculus, and Digital Electronic Circuits
+Education   Academia Universitaria  Madrid, Spain
+•   Highest-rated professor in student surveys, in 4 of the 6 terms.
+•   Increased ratio of students passing the course by 25%.
+Projects    See juanjocarin.github.io for additional information 
+2016    SmartCam
+ 
+Capstone
+Python, OpenCV, TensorFlow, AWS (EC2, S3, DynamoDB)  
+A scalable cloud-based video monitoring system with Raspberry Pis, that features motion detection, face counting, and image recognition.
+ 
+2015    Implementation of the Shortest Path and PageRank algorithms using the Wikipedia graph dataset
+ 
+Machine Learning at Scale
+MrJob, Python, AWS EC2, AWS S3 
+Using a graph dataset of almost half a million nodes.  
+2015    Forest cover type prediction
+ 
+Machine Learning
+Python, Scikit-Learn, Matplotlib
+ 
+A Kaggle competition: predictions of the predominant kind of tree cover, from strictly cartographic variables such as elevation and soil type, using random forests, SVMs, kNNs, Naïve Bayes, Gradient Descent, GMMs… 
+2015    Redefining the job search process
+ 
+Storing and Retrieving Data
+Hadoop, Hive, Spark, Python, AWS EC2, Tableau 
+A pipeline that combines data from Indeed API and the U.S. Census Bureau to select the best locations for data scientists based on the number of job postings, housing cost, etc.
+ 
+2015    A fresh perspective on Citi Bike
+ 
+Data Visualization and Communication
+Tableau, SQLite 
+An interactive website to visualize NYC Citi Bike bicycle sharing service. 
+2015    Investigating the effect of competition on the ability to solve arithmetic problems
+ 
+Field Experiments
+R
+ 
+A randomized controlled experiment in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).
+ 
+2014    Experimental design to measure the impact of online advertising on the sales of a car manufacturer’s network
+ 
+Capstone
+R 
+Working for Conento: a project for Google Spain to measure the effect of YouTube ads. Designed a matched-pair, cluster-randomized experiment, which involved selecting the test and control groups from a sample of 50+ cities in Spain based on their sales-wise similarity over time. 
+2014    Prediction of customer churn for a mobile network carrier
+ 
+Data Mining
+SAS Enterprise Miner 
+Predictions from a sample of 45,000+ customers, using tree decisions, logistic regression and neural networks.
+ 
+2014    Different models of Harmonized Index of Consumer Prices (HICP) in Spain
+ 
+Time Series
+SPSS, Demetra+ 
+Forecasts based on exponential smoothing, ARIMA, and transfer function (using petrol price as independent variable) models.
