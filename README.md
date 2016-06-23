@@ -115,7 +115,7 @@ I am a business person, so I am most interested in applying experiments and mach
     + Python, OpenCV, TensorFlow, AWS (EC2, S3, DynamoDB)
     + A scalable cloud-based video monitoring system with Raspberry Pis, that features motion detection, face counting, and image recognition.
  
-+ 2015: Implementation of the shortest path (https://goo.gl/QKYSdC) and PageRank (https://goo.gl/KLXrcL) algorithms using the Wikipedia graph dataset
++ 2015: Implementation of the shortest path (https://goo.gl/QKYSdC) and PageRank (https://goo.gl/KLXrcL) algorithms with the Wikipedia graph dataset
     
     + Machine Learning at Scale
     + MrJob, Python, AWS EC2, AWS S3
