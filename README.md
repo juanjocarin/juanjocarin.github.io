@@ -169,16 +169,12 @@ I am a business person, so I am most interested in applying experiments and mach
 
 + 2014: Prediction of customer churn for a mobile network carrier (https://goo.gl/0TdvqM)
     
-    Data Mining
-    
-    SAS Enterprise Miner
-
-    Predictions from a sample of 45,000+ customers, using tree decisions, logistic regression and neural networks.
+    + Data Mining
+    + SAS Enterprise Miner
+    + Predictions from a sample of 45,000+ customers, using tree decisions, logistic regression and neural networks.
 
 + 2014: Different models of Harmonized Index of Consumer Prices (HICP) in Spain (https://goo.gl/nqn9kr)
     
-    Time Series
-
-    SPSS, Demetra+
-
-    Forecasts based on exponential smoothing, ARIMA, and transfer function (using petrol price as independent variable) models.
+    + Time Series
+    + SPSS, Demetra+
+    + Forecasts based on exponential smoothing, ARIMA, and transfer function (using petrol price as independent variable) models.
