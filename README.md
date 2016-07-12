@@ -11,8 +11,6 @@
 
 After 9 years working in sales, almost 5 of them in a management position, I pursued my dream of being a data scientist: of digging down deep in the data (lots of them and of all kinds) and being able to extract unobserved patterns, infer causality through randomized experiments, and make reliable predictions and well-informed decisions.
 
-I am a business person, so I am most interested in applying experiments and machine learning/data mining techniques to marketing and customer behavior.
-
 
 ## EDUCATION
 
@@ -31,10 +29,10 @@ I am a business person, so I am most interested in applying experiments and mach
 + 2014: M.S. IN STATISTICAL AND COMPUTATIONAL INFORMATION PROCESSING - Universidad Politécnica de Madrid (GPA: 3.69)
     
     Relevant courses:
+    + Neural Networks and Statistical Learning
     + Data Mining
     + Multivariate Analysis
     + Time Series
-    + Neural Networks and Statistical Learning
     + Regression and Prediction Methods
     + Optimization Techniques
     + Monte Carlo Techniques
