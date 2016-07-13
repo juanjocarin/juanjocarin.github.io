@@ -9,7 +9,7 @@
 
 ## PROFESSIONAL PROFILE
 
-After 9 years working in sales, almost 5 of them in a management position, I pursued my dream of being a data scientist: of digging down deep in the data (lots of them and of all kinds) and being able to extract unobserved patterns, infer causality through randomized experiments, and make reliable predictions and well-informed decisions.
+After 9 years working in sales, almost 5 of them in a management position, I pursued my dream of being a data scientist: of digging down deep in the data (lots of it and of all kinds) and being able to extract unobserved patterns, infer causality through randomized experiments, and make reliable predictions and well-informed decisions.
 
 
 ## EDUCATION
@@ -93,7 +93,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 
     + Exceeded sales target every year from 2005 to 2007 (achieved 60% of the target in the first 3 months of 2008).
 
-+ Jul. 2002 - Jun. 2004: TUTOR OF PHYSICS, DIFFERENTIAL AND INTEGRAL CALCULUS, AND DIGITAL ELECTRONIC CIRCUITS
++ Jul. 2002 - Jun. 2004: TUTOR OF DIFFERENTIAL AND INTEGRAL CALCULUS, PHYSICS, AND DIGITAL ELECTRONIC CIRCUITS
     
     Education - ACADEMIA UNIVERSITARIA - Madrid, Spain
 
@@ -155,7 +155,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     
     + Data Mining
     + SAS Enterprise Miner
-    + Predictions from a sample of 45,000+ customers, using tree decisions, logistic regression and neural networks.
+    + Predictions from a sample of 45,000+ customers, using tree decisions, logistic regression, and neural networks.
 
 + 2014: Different models of Harmonized Index of Consumer Prices (HICP) in Spain (https://goo.gl/nqn9kr)
     
