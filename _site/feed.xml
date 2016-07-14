@@ -5,8 +5,8 @@
     <description>Portfolio website of Juan Jose (aka Juanjo) Carin, data scientist, with info about some of my projects while earning my master&#39;s degrees in Information and Data Science, and Statistical and Computational Information Processing.</description>
     <link>http://juanjocarin.github.io/</link>
     <atom:link href="http://juanjocarin.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 14 Jun 2016 14:31:41 -0700</pubDate>
-    <lastBuildDate>Tue, 14 Jun 2016 14:31:41 -0700</lastBuildDate>
+    <pubDate>Thu, 14 Jul 2016 14:21:24 -0700</pubDate>
+    <lastBuildDate>Thu, 14 Jul 2016 14:21:24 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -82,6 +82,17 @@
         <pubDate>Sun, 24 Apr 2016 00:00:00 -0700</pubDate>
         <link>http://juanjocarin.github.io/2016/04/24/project-7/</link>
         <guid isPermaLink="true">http://juanjocarin.github.io/2016/04/24/project-7/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Demonstration</title>
+        <description>
+</description>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 -0700</pubDate>
+        <link>http://juanjocarin.github.io/2016/04/24/project-10/</link>
+        <guid isPermaLink="true">http://juanjocarin.github.io/2016/04/24/project-10/</guid>
         
         
       </item>
