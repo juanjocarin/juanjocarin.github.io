@@ -1,0 +1,28 @@
+---
+title: Head of Sales, T&M, Spain and Portugal
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 18
+date: 2016-04-13
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'Juan Jose is easy to work with, has a strategic mind, a genuine interest in people and other cultures. He easily understands complex matters and is a real team player.'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://se.linkedin.com/in/johan-waldelius-664ab44
+person: Johan Waldelius
+position: colleague
+company: Yokogawa
+
+---

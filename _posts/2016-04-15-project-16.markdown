@@ -1,0 +1,28 @@
+---
+title: M.S. in Statistical and Computational Information Processing
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 16
+date: 2016-04-15
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'Juanjo was an excellent student in my Master''s course "Neural Networks and Statistical Learning" at the Technical University of Madrid. He showed a very high motivation and capability not only to grasp fundamental aspects but also to address real problems. In addition, Juanjo is a very open a communicative person which makes him easy to share ideas and organize tasks.'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://es.linkedin.com/in/pedro-j-zufiria-31488774/en
+person: Pedro J. Zufiria
+position: professor
+company: <em>Univ. Politecnica de Madrid</em>
+
+---

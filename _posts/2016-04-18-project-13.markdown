@@ -1,0 +1,28 @@
+---
+title: Master of Information and Data Science
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 13
+date: 2016-04-18
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'Juanjo was my student at UC Berkeley in a master''s-level class on the design and analysis of randomized experiments for corporate research. He was without a doubt one of the stand-out students. I would highly recommend his skills. His performance was excellent.'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://www.linkedin.com/in/dbroockman
+person: David Broockman
+position: professor
+company: UC Berkeley
+
+---

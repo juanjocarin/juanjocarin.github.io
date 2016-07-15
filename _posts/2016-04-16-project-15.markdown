@@ -1,0 +1,28 @@
+---
+title: Master of Information and Data Science
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 15
+date: 2016-04-16
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'Juanjo is that wonderful combination of capable, smart, hard-working guy who also happens to be highly personable. I''m happy to recommend him.'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://www.linkedin.com/in/annettegreiner
+person: Annette Greiner
+position: professor
+company: UC Berkeley
+
+---

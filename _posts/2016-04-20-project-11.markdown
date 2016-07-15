@@ -1,0 +1,28 @@
+---
+title: Data Scientist
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 11
+date: 2016-04-20
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'Juanjo''s main strengths were his ability to solve complex problems by developing innovative ideas, combined with his smart focus on time and resources to execute them. He worked hard to make sure results were achieved, adapting very well to our work environment and building an excellent relationship with his mates. He is intelligent, positive, and rigorous, and a very generous person that is just a pleasure to work with.'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://www.linkedin.com/in/macaestevez
+person: Macarena Estevez
+position: CEO
+company: Conento
+
+---

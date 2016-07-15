@@ -1,0 +1,28 @@
+---
+title: Head of Sales, T&M, Spain and Portugal
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 17
+date: 2016-04-14
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'I had the opportunity to work with Juan Jose and it was really easy to choose and run the installation. Not a lot of people understand the difficulties to choose an appropriated equipment to do a specialized job. Juan Jose does! Congratulations!'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://www.linkedin.com/in/ramon-santos-yus-534ba446
+person: Ramon Santos Yus
+position: client
+company: Yokogawa
+
+---

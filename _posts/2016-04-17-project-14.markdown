@@ -1,0 +1,28 @@
+---
+title: Master of Information and Data Science
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 14
+date: 2016-04-17
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'I was impressed by the presentation Juanjo made in my class on research design and applications for data analysis. Juanjo demonstrated great storytelling skills, giving a convincing demonstration of the need for his proposal. He can articulate a good research question &ndash; simple, direct, specific, and yet still challenging &ndash; and can handle tough questions from an audience. He has a strong grasp of research design, with really great description of why he recommended the adoption of an experimental design and good discussion of the method itself.'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://www.linkedin.com/in/peter-norlander-a691545
+person: Peter Norlander
+position: professor
+company: UC Berkeley
+
+---

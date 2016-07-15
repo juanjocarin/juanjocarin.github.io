@@ -1,0 +1,28 @@
+---
+title: Master of Information and Data Science
+project: false
+referral: true
+subtitle: 
+layout: default
+modal-id: 12
+date: 2016-04-19
+img: 
+thumbnail: 
+project-date: 
+course: 
+master: 
+keywords: 
+tools: 
+description: 'Juanjo was an excellent student in my course on experiments and causal inference. He asked terrific questions, turned in great problem sets, and did a very conscientious job on a team project experimenting with how perceptions of competition affect productivity in math problems.'
+link1: 
+link1-text: 
+link2: 
+link2-text: 
+link3: 
+link3-text: 
+linkedin: https://www.linkedin.com/in/david-reiley-b9a3a74
+person: David Reiley
+position: professor
+company: UC Berkeley
+
+---
