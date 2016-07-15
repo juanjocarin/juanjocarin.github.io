@@ -23,7 +23,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-justify">
                     <ol class="smaller">
                         <li><p class="smaller">It turns out that it only is at the 20% significance level. For such a small sample, 72.0% (11) of the 14 laptops would have to be Macs for their proportion to be significantly higher than 0.5 at the <em>usual</em> 5% level. But of course the sample is very small and not representative of the whole population! With a <strong>random</strong> sample of 1,000 laptop users, 52.6% of Macs would be enough to say that they are significantly more common than PCs at the 5% level; with a sample of one million, fewer than 50.1% would be enough. If you&rsquo;re curious about the minimum number of positive cases (as I was), here&rsquo;s the expression I obtained: <a href="#fr1">↩</a>
-                    <br id="fn2">$$N_1 \geq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{t_{.95,N-1}}{\sqrt{N+t_{.95,N-1}^2-1}}\right) \right \rceil$$</p>
+                    <br id="fn2">$$N_1 \geq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{t_{.95,N-1}}{\sqrt{N+t_{.95,N-1}^2-1}}\right) \right \rceil \simeq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{1.645}{\sqrt{N}}\right) \right \rceil$$</p>
                     {% for post in site.posts %}
                         {% if post.title contains "Demonstration" %}
                             <p><a class="smaller" href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal" target="_blank">{{ post.title }}</a></p>
