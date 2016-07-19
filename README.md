@@ -66,7 +66,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     
     Data Science - CONENTO - Madrid, Spain (remotely)
     
-    + Designed and implemented the ETL pipeline for a predictive model of traffic on major roads in Eastern Spain (a project for the Spanish government).
+    + Designed and implemented the ETL pipeline for a predictive model of traffic on the main roads in eastern Spain (a project for the Spanish government).
 
 + Jun. 2014 - Sep. 2014: RESEARCHER
     
@@ -111,7 +111,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     
     + Capstone
     + Python, OpenCV, TensorFlow, AWS (EC2, S3, DynamoDB)
-    + A scalable cloud-based video monitoring system with Raspberry Pis, that features motion detection, face counting, and image recognition.
+    + A scalable cloud-based video monitoring system with Raspberry Pis that features motion detection, face counting, and image recognition.
  
 + 2015: Implementation of the shortest path (https://goo.gl/QKYSdC) and PageRank (https://goo.gl/KLXrcL) algorithms with the Wikipedia graph dataset
     
@@ -123,7 +123,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     
     + Machine Learning
     + Python, Scikit-Learn, Matplotlib
-    + A Kaggle competition: predictions of the predominant kind of tree cover, from strictly cartographic variables such as elevation and soil type, using random forests, SVMs, kNNs, Naïve Bayes, Gradient Descent, GMMs...
+    + A Kaggle competition: predictions of the predominant kind of tree cover, from strictly cartographic variables such as elevation and soil type, using random forests, SVMs, kNNs, Naive Bayes, Gradient Descent, GMMs, ...
 
 + 2015: Redefining the job search process (https://goo.gl/8yeXo3)
     
@@ -141,7 +141,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     
     + Field Experiments
     + R
-    + A randomized controlled experiment in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).
+    + A randomized controlled trial in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).
 
 ### M.S. in Statistical and Computational Information Processing
 
