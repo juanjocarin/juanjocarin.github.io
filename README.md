@@ -17,6 +17,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 + 2016: MASTER OF INFORMATION AND DATA SCIENCE - University of California, Berkeley (GPA: 3.93)
     
     Relevant courses:
+
     + Machine Learning
     + Machine Learning at Scale
     + Storing and Retrieving Data
@@ -29,6 +30,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 + 2014: M.S. IN STATISTICAL AND COMPUTATIONAL INFORMATION PROCESSING - Universidad Politécnica de Madrid (GPA: 3.69)
     
     Relevant courses:
+
     + Neural Networks and Statistical Learning
     + Data Mining
     + Multivariate Analysis
@@ -49,22 +51,19 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 
 ## SKILLS
 
-+ Spanish (native speaker)
-+ R (advanced), Python, SQL, Matlab (proficient)
-+ Hadoop, MrJob (proficient), Spark, Storm (basic)
-+ Tableau, ggplot2 (proficient), D3.js (basic)
-+ SPSS (proficient), SAS, EViews, Demetra+ (basic)
-+ AWS S3, HDFS (proficient), Hive (basic)
-+ Hugin, Gephi, Neo4j (basic)
-+ MapInfo, QGIS (basic)
-+ Git, Bash (proficient)
+| Level        | Programming/Stats | Visualization | Big Data      | Others       |
+| :----------- | :---------------- | :------------ | :------------ | :----------- |
+| Advanced     | R                 |               |               | Spanish      |
+| Proficient   | Python, SQL       | Tableau       | Hadoop, MrJob | Git          |
+| Intermediate | SPSS, SAS, Matlab |               | Spark, Storm  | AWS, Bash    |
+| Basic        | EViews, Demetra+  | D3.js         | Hive          | Hugin, Neo4j |
 
 
 ## EXPERIENCE
 
 + Jan. 2016 - Mar. 2016: DATA SCIENTIST
     
-    Data Science - CONENTO - Madrid, Spain (remotely)
+    Data Science - CONENTO - Madrid, Spain (working remotely)
     
     + Designed and implemented the ETL pipeline for a predictive model of traffic on the main roads in eastern Spain (a project for the Spanish government).
 
