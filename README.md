@@ -63,38 +63,38 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 
 + Jan. 2016 - Mar. 2016: DATA SCIENTIST
     
-    Data Science - CONENTO - Madrid, Spain (working remotely)
+    CONENTO - Madrid, Spain (working remotely)
     
     + Designed and implemented the ETL pipeline for a predictive model of traffic on the main roads in eastern Spain (a project for the Spanish government).
 
-+ Jun. 2014 - Sep. 2014: RESEARCHER
++ Jun. 2014 - Sep. 2014: DATA SCIENTIST
     
-    Data Science - CONENTO - Madrid, Spain
+    CONENTO - Madrid, Spain
 
     + Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer’s dealer network.
 
 + Feb. 2009 - Aug. 2013: HEAD OF SALES, SPAIN & PORTUGAL - TEST & MEASUREMENT DEPARTMENT
     
-    Management, Sales - YOKOGAWA - Madrid, Spain
+    YOKOGAWA - Madrid, Spain
 
     + Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets, improving customer training and service quality, and promoting less popular regions and product lines.
     + Awarded with "100% sales" prize in 2010 and 2011.
 
 + Apr. 2008 - Jan. 2009: SALES ENGINEER - TEST & MEASUREMENT DEPARTMENT
     
-    Sales - YOKOGAWA - Madrid, Spain
+    YOKOGAWA - Madrid, Spain
 
     + Promoted to head of sales after 5 months leading the sales team.
 
 + Sep. 2004 - Mar. 2008: SALES & APPLICATION ENGINEER
     
-    Sales - AYSCOM - Madrid, Spain
+    AYSCOM - Madrid, Spain
 
     + Exceeded sales target every year from 2005 to 2007 (achieved 60% of the target in the first 3 months of 2008).
 
 + Jul. 2002 - Jun. 2004: TUTOR OF DIFFERENTIAL AND INTEGRAL CALCULUS, PHYSICS, AND DIGITAL ELECTRONIC CIRCUITS
     
-    Education - ACADEMIA UNIVERSITARIA - Madrid, Spain
+    ACADEMIA UNIVERSITARIA - Madrid, Spain
 
     + Highest-rated professor in student surveys, in 4 of the 6 terms.
     + Increased ratio of students passing the course by 25%.
@@ -148,7 +148,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     
     + Capstone
     + R
-    + Working for Conento: a project for Google Spain to measure the effect of YouTube ads. Designed a matched-pair, cluster-randomized experiment, which involved selecting the test and control groups from a sample of 50+ cities in Spain based on their sales-wise similarity over time.
+    + Working at Conento: a project for Google Spain to measure the effect of YouTube ads. Designed a matched-pair, cluster-randomized experiment, which involved selecting the test and control groups from a sample of 50+ cities in Spain based on their sales-wise similarity over time.
 
 + 2014: Prediction of customer churn for a mobile network carrier (https://goo.gl/0TdvqM)
     
