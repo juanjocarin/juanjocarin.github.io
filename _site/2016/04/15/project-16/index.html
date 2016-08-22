@@ -184,12 +184,37 @@
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-justify" id="fr1">
                     <!--class="large"-->
-                    <p>I really liked my job, but I also wanted to be in an even more technical position. I've loved math problems and puzzles since I was a kid, and I didn't even have to look for them: if I was at the local Starbucks and saw 14 people using a laptop, 9 (64.3%) of them being a Mac, I found myself wondering if it could be said that the number of Macs was significantly higher than the number of PCs<a href="#fn1" name="fr1" class="fn"><sup>[1]</sup></a>. And I was always trying to get valuable insights from the reduced amount of sales data we had (it was a small market). I eventually realized that I wanted to dig down deeper in the data (lots of it and of all kinds!) and be able to extract unobserved patterns, infer causality through experiments, and make reliable predictions and well-informed decisions; I wanted to be a data scientist. That's why I went back to my <em>alma mater</em> to earn another Master's degree<!--<a href="#fn2" name="fr2" class="fn"><sup>[2]</sup></a>-->, this time in Statistics, and right after that another one in Data Science from UC Berkeley.</p>
+                    <p>I really liked my job, but I also wanted to be in an even more technical position. I've loved math problems<a href="#fn1" name="fr1" class="fn"><sup>[1]</sup></a> and puzzles since I was a kid, and I didn't even have to look for them: if I was at the local Starbucks and saw 14 people using a laptop, 9 (64.3%) of them being a Mac, I found myself wondering if it could be said that the number of Macs was significantly higher than the number of PCs<a href="#fn2" name="fr2" class="fn"><sup>[2]</sup></a>. And I was always trying to get valuable insights from the reduced amount of sales data we had (it was a small market). I eventually realized that I wanted to dig down deeper in the data (lots of it and of all kinds!) and be able to extract unobserved patterns, infer causality through experiments, and make reliable predictions and well-informed decisions; I wanted to be a data scientist. That's why I went back to my <em>alma mater</em> to earn another Master's degree<!--<a href="#fn2" name="fr2" class="fn"><sup>[2]</sup></a>-->, this time in Statistics, and right after that another one in Data Science from UC Berkeley.</p>
                 </div>
                 <div class="anchor" id="fn1"></div>
                 <div class="col-lg-8 col-lg-offset-2 text-justify">
                     <ol class="smaller">
-                        <li><p class="smaller">It turns out that it only is at the 20% significance level. For such a small sample, 72.0% (11) of the 14 laptops would have to be Macs for their proportion to be significantly higher than 0.5 at the <em>usual</em> 5% level.<br>In any case, that sample, apart from being very small, is not representative of the whole population! With a <strong>random</strong> sample of a thousand laptops, 52.6% of Macs would be enough to say that they are significantly more prevalent than PCs at the 5% level; with a sample of a million laptops, fewer than 50.1% of Macs would be enough. If you are curious about the minimum number of positive cases&mdash;as I was&mdash;, this is the expression I obtained
+                        <li><p class="smaller">Like the "Seattle rain" problem: 
+                        
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                click <strong><a class="smaller" href="#portfolioModal19" class="portfolio-link" data-toggle="modal" target="_blank">here</a></strong> to read my solution.<!--<a href="#fr1">↩</a>-->
+                        </p></li>                
+                <div class="anchor" id="fn2"></div>
+                        <li><p class="smaller">It turns out that it only is at the 20% significance level. For such a small sample, 72.0% (11) of the 14 laptops would have to be Macs for their proportion to be significantly higher than 0.5 at the <em>usual</em> 5% level.<br>In any case, that sample, apart from being very small, is not representative of the whole population! With a <strong>random</strong> sample of a thousand laptops, 52.6% of Macs would be enough to say that they are significantly more prevalent than PCs at the 5% level; with a sample of a million laptops, fewer than 50.1% of Macs would be enough. If you are curious about the minimum number of positive cases&mdash;as I was&mdash;, this is the expression I obtained    
+
                         
                             
                             
@@ -209,8 +234,10 @@
                             
                             
                             
-                             <a href="#fr1">↩</a>
-                    <br id="fn2">$$\begin{aligned} N_1 &\geq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{t_{.95,N-1}}{\sqrt{N+t_{.95,N-1}^2-1}}\right) \right \rceil \\ &\simeq  \left \lceil \frac{N}{2} + 0.822 \cdot \sqrt{N} \right \rceil\end{aligned}$$</p>
+                            
+                             <!--<a href="#fr1">↩</a>-->
+
+                    <br>$$\begin{aligned} N_1 &\geq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{t_{.95,N-1}}{\sqrt{N+t_{.95,N-1}^2-1}}\right) \right \rceil \\ &\simeq  \left \lceil \frac{N}{2} + 0.822 \cdot \sqrt{N} \right \rceil\end{aligned}$$</p>
                     
                     <!--<a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a>--></li>
                         <!--<li><p id="fn2" class="smaller">That program is offered jointly by <em>Universidad Polit&eacute;cnica de Madrid</em> (School of Telecommunications Engineering) and <em>Universidad Complutense de Madrid</em> (Faculty of Mathematics).<a href="#fr1">↩</a></p></li>-->
@@ -690,6 +717,10 @@ $(document).ready(function(){
 
             
 
+                
+
+            
+
         </div>
     </section>
       <footer>
@@ -736,6 +767,9 @@ $(document).ready(function(){
      <!-- Portfolio Modals -->
  
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -751,7 +785,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-video-camera"></i></a></span>-->
-                            <h4>SmartCam</h4>
+                            <h4 class="text-center">SmartCam</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>A scalable cloud-based video monitoring system (with motion detection, face counting, and image recognition) using Raspberry Pis. Most of the processing is done in the cloud, so the computing power of the Raspberry Pi is not a limitation.</p>
 
                             <p><a href="https://smart-cam.github.io/" target="_blank"><strong>Website</strong></a><br>
@@ -766,7 +802,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -774,6 +810,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -790,7 +829,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-wikipedia-w"></i></a></span>-->
-                            <h4>Shortest Path and PageRank algorithms applied to the Wikipedia graph dataset</h4>
+                            <h4 class="text-center">Shortest Path and PageRank algorithms applied to the Wikipedia graph dataset</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Two of the assignments of the course, using with a graph dataset of almost half a million nodes.</p>
 
                             <p><a href="https://github.com/juanjocarin/W261-Machine-Learning-At-Scale/blob/master/Week07-MrJob/MIDS-W261-2015-HWK-Week07-CarinLlopSatpati-groupZ.ipynb" target="_blank"><strong>Shortest Path</strong></a><br>
@@ -805,7 +846,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -813,6 +854,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -829,7 +873,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-tree"></i></a></span>-->
-                            <h4>Forest Cover Type Prediction</h4>
+                            <h4 class="text-center">Forest Cover Type Prediction</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Kaggle competition</a>: predictions of the predominant kind of tree cover in four wilderness areas located in the Roosevelt National Forest of northern Colorado, from strictly cartographic variables such as elevation and soil type.</p>
 
                             <p><a href="https://github.com/juanjocarin/W207-Machine-Learning/blob/master/Forest/W207-Carin_Mahmud_Sakhamuri.ipynb" target="_blank"><strong>IPython Notebook</strong></a><br>
@@ -844,7 +890,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -852,6 +898,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -868,7 +917,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-map-marker"></i></a></span>-->
-                            <h4>Redefining the job search process</h4>
+                            <h4 class="text-center">Redefining the job search process</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>A pipeline that combines data from Indeed API and the U.S. Census Bureau to select the best locations for data scientists based on the number of job postings, housing cost, etc.</p>
 
                             <p><a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" target="_blank"><strong>GitHub</strong></a><br>
@@ -883,7 +934,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -891,6 +942,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -907,7 +961,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-bicycle"></i></a></span>-->
-                            <h4>A fresh perspective on Citi Bike</h4>
+                            <h4 class="text-center">A fresh perspective on Citi Bike</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>An interactive website to visualize NYC Citi Bike bicycle sharing service.</p>
 
                             <p><a href="http://juanjocarin.github.io/Citibike-viz/" target="_blank"><strong>Website</strong></a><br>
@@ -922,7 +978,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -930,6 +986,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -946,7 +1005,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-flask"></i></a></span>-->
-                            <h4>Investigating the Effect of Competition on the Ability to Solve Arithmetic Problems</h4>
+                            <h4 class="text-center">Investigating the Effect of Competition on the Ability to Solve Arithmetic Problems</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>A randomized controlled experiment in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).</p>
 
                             <p><a href="https://drive.google.com/file/d/0B3cqLO1xs1GISDlFZDlmX0ZKem8/view" target="_blank"><strong>Paper</strong></a><br>
@@ -961,7 +1022,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -969,6 +1030,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -985,7 +1049,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-youtube"></i></a></span>-->
-                            <h4>Experimental design to measure the impact of online advertising on the sales of a car manufacturer’s dealer network</h4>
+                            <h4 class="text-center">Experimental design to measure the impact of online advertising on the sales of a car manufacturer’s dealer network</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>A project for Google (working at Conento) to measure the effect of YouTube ads. Responsible for the whole project (excluding the econometric model to estimate the increase in advertising spend in the test group): designed a matched-pair, cluster-randomized experiment, which involved selecting the test and control groups from a sample of 50+ cities in Spain based on their sales-wise similarity over time.</p>
 
                             <p><a href="https://drive.google.com/file/d/0B3cqLO1xs1GITWtUdVJjQnhEWVk/view" target="_blank"><strong>Paper</strong></a><br>
@@ -1000,7 +1066,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1008,6 +1074,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1024,7 +1093,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Demonstration</h4>
+                            <h4 class="text-center">Demonstration</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>We can fit the population of laptops to a Bernoulli distribution with probability \(p\) of being a Mac rather than a PC. Hence, in a sample of \(N\) laptops, the number of Macs would be \(N_1 = p \cdot N\), and the sample mean and variance are, respectively:$$\begin{aligned}\bar{x} &= \frac{1}{N}\sum_{i=1}^N x_i = \frac{N_1}{N} \\ &= p \\ s_x &= \frac{1}{N-1}\sum_{i=1}^N \left(x_i - \bar{x}\right)^2 = \frac{N_1(N-N_1)}{N(N-1)} \\ &= \frac{N}{N-1} p (1-p)\end{aligned}$$Our hypothesis is that Macs are more common than PCs:$$\begin{aligned}H_0&: \bar{x} = 0.5 \\ H_1&: \bar{x} > 0.5\end{aligned}$$To be able to reject the null hypothesis at the \(\alpha\) confidence level, the following inequality (where \(t = t_{1-\alpha, N-1}\)) should hold:$$\begin{aligned} \frac{\bar{x} - 0.5}{s_x/\sqrt{N}} &\geq t \\ \frac{p-\frac{1}{2}}{\sqrt{\frac{p(1-p)}{N-1}}} &\geq t \\ \frac{2p-1}{2} &\geq t\sqrt{\frac{p(1-p)}{N-1}} \\ (2p-1)^2(N-1) &\geq 4t^2p(1-p) \end{aligned}$$$$4p^2(N+t^2-1)-4p(N+t^2-1)+(N-1) \geq 0$$For simplicity, let's denote \(N+t^2-1\) by \(\theta\):$$4\theta p^2-4\theta p + N-1 \geq 0$$$$\begin{aligned}p &\geq \frac{4\theta+\sqrt{16\theta^2-16\theta(N-1)}}{8\theta} \\ &= \frac{1+\sqrt{1-\frac{N-1}{\theta}}}{2} \\ &= \frac{1}{2}\left(1+\sqrt{\frac{\theta-N-1}{\theta}}\right) \\ &= \frac{1}{2}\left(1+\frac{t}{\sqrt{\theta}}\right)\end{aligned}$$Hence the percentage of Macs must exceed \(50\%\) by \(50 t/\sqrt{\theta}\) percentage points to be significantly higher than that value (at the \(\alpha\) level).<br>As \(N\) increases, \(t_{1-\alpha, N-1}\) approaches \(\Phi^{-1}(1-\alpha)\) and \(\theta\) approaches \(N\); since \(N_1\) must be an integer (the smallest one that is greater than \(N \cdot p\)), the approximation$$\begin{aligned} N_1 &\simeq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{\Phi^{-1}(1-\alpha)}{\sqrt{N}}\right) \right \rceil \\ &= \left \lceil \frac{N}{2} + \frac{\Phi^{-1}(1-\alpha)}{2} \cdot \sqrt{N} \right \rceil \end{aligned}$$works even for small values of \(N\).</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1039,7 +1110,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1047,6 +1118,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1063,7 +1137,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-mobile"></i></a></span>-->
-                            <h4>Prediction of customer churn for a mobile network carrier</h4>
+                            <h4 class="text-center">Prediction of customer churn for a mobile network carrier</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Predictions from a sample of 45,000+ customers.</p>
 
                             <p><a href="https://drive.google.com/file/d/0B3cqLO1xs1GIQXJ5OXhtcUYwMWs/view" target="_blank"><strong>Paper (Spanish)</strong></a><br>
@@ -1078,7 +1154,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1086,6 +1162,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1102,7 +1181,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa fa-money"></i></a></span>-->
-                            <h4>Different models of Harmonized Index of Consumer Prices (HICP) in Spain</h4>
+                            <h4 class="text-center">Different models of Harmonized Index of Consumer Prices (HICP) in Spain</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Forecasts based on exponential smoothing, ARIMA, and transfer function (using petrol price as independent variable) models.</p>
 
                             <p><a href="https://drive.google.com/file/d/0B3cqLO1xs1GIT0poekFhNzR4Nlk/view" target="_blank"><strong>Paper (Spanish)</strong></a><br>
@@ -1117,7 +1198,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1125,6 +1206,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1141,7 +1225,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Data Scientist</h4>
+                            <h4 class="text-center">Data Scientist</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Juanjo's main strengths were his ability to solve complex problems by developing innovative ideas, combined with his smart focus on time and resources to execute them. He worked hard to make sure results were achieved, adapting very well to our work environment and building an excellent relationship with his mates. He is intelligent, positive, and rigorous, and a very generous person that is just a pleasure to work with.</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1156,7 +1242,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1164,6 +1250,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1180,7 +1269,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Master of Information and Data Science</h4>
+                            <h4 class="text-center">Master of Information and Data Science</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Juanjo was an excellent student in my course on experiments and causal inference. He asked terrific questions, turned in great problem sets, and did a very conscientious job on a team project experimenting with how perceptions of competition affect productivity in math problems.</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1195,7 +1286,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1203,6 +1294,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1219,7 +1313,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Master of Information and Data Science</h4>
+                            <h4 class="text-center">Master of Information and Data Science</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Juanjo was my student at UC Berkeley in a master's-level class on the design and analysis of randomized experiments for corporate research. He was without a doubt one of the stand-out students. I would highly recommend his skills. His performance was excellent.</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1234,7 +1330,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1242,6 +1338,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1258,7 +1357,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Master of Information and Data Science</h4>
+                            <h4 class="text-center">Master of Information and Data Science</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>I was impressed by the presentation Juanjo made in my class on research design and applications for data analysis. Juanjo demonstrated great storytelling skills, giving a convincing demonstration of the need for his proposal. He can articulate a good research question &ndash; simple, direct, specific, and yet still challenging &ndash; and can handle tough questions from an audience. He has a strong grasp of research design, with really great description of why he recommended the adoption of an experimental design and good discussion of the method itself.</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1273,7 +1374,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1281,6 +1382,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1297,7 +1401,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Master of Information and Data Science</h4>
+                            <h4 class="text-center">Master of Information and Data Science</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Juanjo is that wonderful combination of capable, smart, hard-working guy who also happens to be highly personable. I'm happy to recommend him.</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1312,7 +1418,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1320,6 +1426,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1336,7 +1445,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>M.S. in Statistical and Computational Information Processing</h4>
+                            <h4 class="text-center">M.S. in Statistical and Computational Information Processing</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Juanjo was an excellent student in my Master's course "Neural Networks and Statistical Learning" at the Technical University of Madrid. He showed a very high motivation and capability not only to grasp fundamental aspects but also to address real problems. In addition, Juanjo is a very open a communicative person which makes him easy to share ideas and organize tasks.</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1351,7 +1462,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1359,6 +1470,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1375,7 +1489,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Head of Sales, T&M, Spain and Portugal</h4>
+                            <h4 class="text-center">Head of Sales, T&M, Spain and Portugal</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>I had the opportunity to work with Juan Jose and it was really easy to choose and run the installation. Not a lot of people understand the difficulties to choose an appropriated equipment to do a specialized job. Juan Jose does! Congratulations!</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1390,7 +1506,7 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
@@ -1398,6 +1514,9 @@ $(document).ready(function(){
         </div>
     </div>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -1414,7 +1533,9 @@ $(document).ready(function(){
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa "></i></a></span>-->
-                            <h4>Head of Sales, T&M, Spain and Portugal</h4>
+                            <h4 class="text-center">Head of Sales, T&M, Spain and Portugal</h4>
+                            <p class="text-justify">
+                            </p>
                             <p class="text-justify"><br>Juan Jose is easy to work with, has a strategic mind, a genuine interest in people and other cultures. He easily understands complex matters and is a real team player.</p>
 
                             <p><a href="" target="_blank"><strong></strong></a><br>
@@ -1429,7 +1550,223 @@ $(document).ready(function(){
                                 </li>
                             </ul>-->
 
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!--<span class="fa-stack fa-2x">
+                            <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
+                            <i class="fa "></i></a></span>-->
+                            <h4 class="text-center">Seattle Rain</h4>
+                            <p class="text-justify">
+                            
+                                
+                                
+<p><strong><em>You’re about to get on a plane to Seattle. You want to know if you should bring an umbrella. You call 3 random friends of yours who live there and ask each independently if it’s raining. Each of your friends has a 2/3 chance of telling you the truth and a 1/3 chance of messing with you by lying. All 3 friends tell you that “Yes” it is raining. What is the probability that it’s actually raining in Seattle?</em></strong></p>
+
+<p>  <a href="https://www.glassdoor.com/Interview/You-re-about-to-get-on-a-plane-to-Seattle-You-want-to-know-if-you-should-bring-an-umbrella-You-call-3-random-friends-of-y-QTN_519262.htm" target="_blank">Facebook interview question posted on Glassdoor</a>.</p>
+
+<p>Most answers posted on the link above are <script type="math/tex">\left(\frac{2}{3}\right)^3 = \frac{8}{9}</script>, which is the probability that all friends say it rains provided that it actually rains… but we are interested in the opposite, the probability that it rains provided that all friends say it does!</p>
+
+<p>Thus, we need to apply <strong>Bayes’ theorem</strong>, which states that the posterior probability (the probability of an hypothesis <script type="math/tex">H</script> conditional on a given body of data (evidence, <script type="math/tex">E</script>) can be calculated as:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned} \Pr\left(H \mid E\right) & = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\Pr\left(E\right)} \\ & = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\displaystyle\sum_{h \in \mathbb{H}} \Pr\left(E \mid h\right) \cdot \Pr\left(h\right)} \end{aligned} %]]></script>
+
+<p>In this problem:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned} H & :  \text{it rains in city }C \\ E & : \text{all friends say that it rains} \end{aligned} %]]></script>
+
+<p><script type="math/tex">H</script> is a binary event, so:</p>
+
+<script type="math/tex; mode=display">\Pr\left(H \mid E\right) = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right) + \Pr\left(E \mid \bar{H}\right) \cdot \Pr\left(\bar{H}\right)}</script>
+
+<p>Let <script type="math/tex">p</script> be the probability of rain in <script type="math/tex">C</script>, and <script type="math/tex">q</script> be the probability that one friend tells the truth. Then, if there are <script type="math/tex">N</script> friends:</p>
+
+<script type="math/tex; mode=display">\Pr\left(H \mid E\right) = \frac{q^N \cdot p}{q^N \cdot p + (1 - q)^N \cdot (1 - p)}</script>
+
+<p>We are told that <script type="math/tex">3</script> is the number of friends and that <script type="math/tex">q = \frac{2}{3}</script>. Hence:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned} \Pr\left(H \mid E\right) & = \frac{\left(\frac{2}{3}\right)^3 \cdot p}{\left(\frac{2}{3}\right)^3 \cdot p + \left(\frac{1}{3}\right)^3 \cdot (1 - p)} \\ & = \frac{8p}{8p + (1-p)} \\ & = \frac{8p}{7p + 1} \end{aligned} %]]></script>
+
+<p>The tricky part of the problem is this unknown parameter, <script type="math/tex">p</script>, which the solution depends on: we may be biased to think that the solution to this kind of problem is fixed, a particular number.</p>
+
+<p>Let’s see what the posterior probability would be for a few possible values of the prior probability:</p>
+
+<script type="math/tex; mode=display">prior = \begin{Bmatrix}
+0 \\ 
+1/4 \\ 
+1/2 \\ 
+3/4 \\ 
+1
+\end{Bmatrix}
+\Rightarrow
+posterior = \left\{\begin{matrix}
+0 \\ 
+8/11 \\ 
+8/9 \\ 
+24/25 \\ 
+1
+\end{matrix}\right.</script>
+
+<p>Let’s check that the solution above is right, simulating the problem in R (for all possibles values of <script type="math/tex">p</script> from <script type="math/tex">0</script> to <script type="math/tex">1</script>, in steps of <script type="math/tex">0.05</script>):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
+<span class="n">set.seed</span><span class="p">(</span><span class="m">12345</span><span class="p">)</span>
+<span class="n">N</span> <span class="o">&lt;-</span> <span class="m">5e3</span> <span class="c1"># simulations (per value of p)
+</span><span class="n">q</span> <span class="o">&lt;-</span> <span class="m">2</span><span class="o">/</span><span class="m">3</span> <span class="c1"># prob of a friend telling the truth
+</span><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">p</span> <span class="o">=</span> <span class="n">rep</span><span class="p">(</span><span class="n">seq</span><span class="p">(</span><span class="n">from</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">to</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">by</span> <span class="o">=</span> <span class="m">0.05</span><span class="p">),</span> <span class="n">each</span> <span class="o">=</span> <span class="n">N</span><span class="p">))</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="n">data</span> <span class="o">%&gt;%</span> <span class="n">rowwise</span><span class="p">()</span> <span class="o">%&gt;%</span> <span class="n">mutate</span><span class="p">(</span><span class="n">r</span> <span class="o">=</span> <span class="n">rbinom</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="n">mutate</span><span class="p">(</span><span class="n">A</span> <span class="o">=</span> <span class="n">ifelse</span><span class="p">(</span><span class="n">r</span> <span class="o">==</span> <span class="m">1</span><span class="p">,</span> <span class="n">rbinom</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="n">q</span><span class="p">),</span> <span class="n">rbinom</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">1</span> <span class="o">-</span> <span class="n">q</span><span class="p">)),</span> 
+         <span class="n">B</span> <span class="o">=</span> <span class="n">ifelse</span><span class="p">(</span><span class="n">r</span> <span class="o">==</span> <span class="m">1</span><span class="p">,</span> <span class="n">rbinom</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="n">q</span><span class="p">),</span> <span class="n">rbinom</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">1</span> <span class="o">-</span> <span class="n">q</span><span class="p">)),</span> 
+         <span class="n">C</span> <span class="o">=</span> <span class="n">ifelse</span><span class="p">(</span><span class="n">r</span> <span class="o">==</span> <span class="m">1</span><span class="p">,</span> <span class="n">rbinom</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="n">q</span><span class="p">),</span> <span class="n">rbinom</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">1</span> <span class="o">-</span> <span class="n">q</span><span class="p">)))</span> <span class="o">%&gt;%</span> 
+  <span class="n">mutate</span><span class="p">(</span><span class="n">ABC</span> <span class="o">=</span> <span class="n">paste0</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">))</span> <span class="o">%&gt;%</span> <span class="n">select</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">ABC</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="n">ungroup</span><span class="p">()</span>
+<span class="c1"># A, B, C: 1 rains, 0 not
+# r: 1 rains, 0 not
+</span><span class="n">data</span> <span class="o">%&gt;%</span> <span class="n">sample_n</span><span class="p">(</span><span class="m">10</span><span class="p">)</span> <span class="c1"># show 10 of the 21*N rows
+</span></code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">Source</span><span class="o">:</span> <span class="n">local</span> <span class="n">data</span> <span class="n">frame</span> <span class="p">[</span><span class="m">10</span> <span class="n">x</span> <span class="m">3</span><span class="p">]</span>
+
+       <span class="n">p</span>     <span class="n">r</span>   <span class="n">ABC</span>
+   <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">chr</span><span class="o">&gt;</span>
+<span class="m">1</span>   <span class="m">0.70</span>     <span class="m">1</span>   <span class="m">111</span>
+<span class="m">2</span>   <span class="m">0.65</span>     <span class="m">1</span>   <span class="m">101</span>
+<span class="m">3</span>   <span class="m">0.85</span>     <span class="m">1</span>   <span class="m">111</span>
+<span class="m">4</span>   <span class="m">0.90</span>     <span class="m">1</span>   <span class="m">010</span>
+<span class="m">5</span>   <span class="m">0.80</span>     <span class="m">1</span>   <span class="m">011</span>
+<span class="m">6</span>   <span class="m">0.75</span>     <span class="m">1</span>   <span class="m">111</span>
+<span class="m">7</span>   <span class="m">0.95</span>     <span class="m">1</span>   <span class="m">110</span>
+<span class="m">8</span>   <span class="m">0.70</span>     <span class="m">1</span>   <span class="m">011</span>
+<span class="m">9</span>   <span class="m">0.55</span>     <span class="m">1</span>   <span class="m">101</span>
+<span class="m">10</span>  <span class="m">0.60</span>     <span class="m">0</span>   <span class="m">101</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1"># Filter the evidence: all 3 say it rains
+# And group by each value of the prior Prob(it rains), p
+</span><span class="n">data_interest</span> <span class="o">&lt;-</span> <span class="n">data</span> <span class="o">%&gt;%</span> <span class="n">filter</span><span class="p">(</span><span class="n">ABC</span> <span class="o">==</span> <span class="s1">'111'</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="n">group_by</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> 
+<span class="c1"># For each value of the prior (p), what is the posterior?
+# (i.e., the mean number of cases where it rain, r == 1)
+</span><span class="n">data_interest</span> <span class="o">%&gt;%</span> <span class="n">summarize</span><span class="p">(</span><span class="n">posterior</span> <span class="o">=</span> <span class="n">round</span><span class="p">(</span><span class="n">mean</span><span class="p">(</span><span class="n">r</span><span class="p">),</span> <span class="m">3</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="n">mutate</span><span class="p">(</span><span class="n">posterior_theoretical</span> <span class="o">=</span> <span class="n">round</span><span class="p">(</span><span class="m">8</span><span class="o">*</span><span class="n">p</span> <span class="o">/</span> <span class="p">(</span><span class="m">1</span> <span class="o">+</span> <span class="m">7</span><span class="o">*</span><span class="n">p</span><span class="p">),</span> <span class="m">3</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="n">rename</span><span class="p">(</span><span class="n">prior</span> <span class="o">=</span> <span class="n">p</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="n">print</span><span class="p">(</span><span class="n">n</span> <span class="o">=</span> <span class="n">Inf</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">Source</span><span class="o">:</span> <span class="n">local</span> <span class="n">data</span> <span class="n">frame</span> <span class="p">[</span><span class="m">21</span> <span class="n">x</span> <span class="m">3</span><span class="p">]</span>
+
+   <span class="n">prior</span> <span class="n">posterior</span> <span class="n">posterior_theoretical</span>
+   <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>     <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>                 <span class="o">&lt;</span><span class="n">dbl</span><span class="o">&gt;</span>
+<span class="m">1</span>   <span class="m">0.00</span>     <span class="m">0.000</span>                 <span class="m">0.000</span>
+<span class="m">2</span>   <span class="m">0.05</span>     <span class="m">0.279</span>                 <span class="m">0.296</span>
+<span class="m">3</span>   <span class="m">0.10</span>     <span class="m">0.498</span>                 <span class="m">0.471</span>
+<span class="m">4</span>   <span class="m">0.15</span>     <span class="m">0.587</span>                 <span class="m">0.585</span>
+<span class="m">5</span>   <span class="m">0.20</span>     <span class="m">0.643</span>                 <span class="m">0.667</span>
+<span class="m">6</span>   <span class="m">0.25</span>     <span class="m">0.705</span>                 <span class="m">0.727</span>
+<span class="m">7</span>   <span class="m">0.30</span>     <span class="m">0.778</span>                 <span class="m">0.774</span>
+<span class="m">8</span>   <span class="m">0.35</span>     <span class="m">0.814</span>                 <span class="m">0.812</span>
+<span class="m">9</span>   <span class="m">0.40</span>     <span class="m">0.845</span>                 <span class="m">0.842</span>
+<span class="m">10</span>  <span class="m">0.45</span>     <span class="m">0.850</span>                 <span class="m">0.867</span>
+<span class="m">11</span>  <span class="m">0.50</span>     <span class="m">0.900</span>                 <span class="m">0.889</span>
+<span class="m">12</span>  <span class="m">0.55</span>     <span class="m">0.903</span>                 <span class="m">0.907</span>
+<span class="m">13</span>  <span class="m">0.60</span>     <span class="m">0.928</span>                 <span class="m">0.923</span>
+<span class="m">14</span>  <span class="m">0.65</span>     <span class="m">0.949</span>                 <span class="m">0.937</span>
+<span class="m">15</span>  <span class="m">0.70</span>     <span class="m">0.933</span>                 <span class="m">0.949</span>
+<span class="m">16</span>  <span class="m">0.75</span>     <span class="m">0.952</span>                 <span class="m">0.960</span>
+<span class="m">17</span>  <span class="m">0.80</span>     <span class="m">0.974</span>                 <span class="m">0.970</span>
+<span class="m">18</span>  <span class="m">0.85</span>     <span class="m">0.977</span>                 <span class="m">0.978</span>
+<span class="m">19</span>  <span class="m">0.90</span>     <span class="m">0.986</span>                 <span class="m">0.986</span>
+<span class="m">20</span>  <span class="m">0.95</span>     <span class="m">0.995</span>                 <span class="m">0.993</span>
+<span class="m">21</span>  <span class="m">1.00</span>     <span class="m">1.000</span>                 <span class="m">1.000</span>
+</code></pre>
+</div>
+
+<p>Now let’s consider a more generic case, where not only <script type="math/tex">p</script>, but also the number of friends, <script type="math/tex">N</script>, and the probability that any of them tells you the truth, <script type="math/tex">q</script>, are not fixed. This analysis will give us the <em>morality</em> of this problem, which could be “Always trust your friends (especially the more you have!), provided that they tell the truth more often than not” :)</p>
+
+<p>Without loss of generality, let’s assume that <script type="math/tex">q</script> is a positive rational number, and hence can be written as <script type="math/tex">\frac{a}{b}</script>, where <script type="math/tex">a,b \in \mathbb{N}</script>. We want to focus on the case where our friends are more likely to tell the truth, so the following conditions must hold:</p>
+
+<script type="math/tex; mode=display">q \leq 1 \Rightarrow b \geq a</script>
+
+<script type="math/tex; mode=display">q \geq \frac{1}{2} \Rightarrow \frac{b}{a} \leq 2 \Rightarrow \frac{b}{a} - 1 \leq 1</script>
+
+<p>We can write the posterior probability that we want to calculate as:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned}\Pr\left(H \mid E\right) & = \frac{\left(\frac{a}{b}\right)^N \cdot p}{\left(\frac{a}{b}\right)^N \cdot p + \left(1 - \frac{a}{b}\right)^N \cdot (1 - p)} \\ 
+& = \frac{a^N \cdot p}{a^N \cdot p + (b - a)^N \cdot (1-p)} \\
+&  = \frac{1}{1 + \left(\frac{b}{a} - 1\right)^N \cdot \frac{1-p}{p}} \\
+\end{aligned} %]]></script>
+
+<p>Since <script type="math/tex">\frac{b}{a} - 1 \leq 1</script>, the limit of the posterior probability as <script type="math/tex">N</script> approaches infinity is <script type="math/tex">1</script>, regardless of the value of <script type="math/tex">p</script>.</p>
+
+<p>I.e., if a sufficiently large number of friends tell you that it rains in the desert, and the chances that each one of them is messing with you are less than 1/2, bring an umbrella with you. For <script type="math/tex">N = 10</script> (and <script type="math/tex">q = 2/3</script>), the posterior is greater than <script type="math/tex">0.9</script> for a prior as low as <script type="math/tex">0.009</script>.</p>
+
+<p>Let’s finish by plotting the posterior against the prior for a few possible values of <script type="math/tex">q</script> and <script type="math/tex">N</script>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">posterior_prob</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">q</span><span class="o">^</span><span class="n">N</span> <span class="o">*</span> <span class="n">p</span> <span class="o">/</span> <span class="p">(</span><span class="n">q</span><span class="o">^</span><span class="n">N</span> <span class="o">*</span> <span class="n">p</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span> <span class="o">-</span> <span class="n">q</span><span class="p">)</span><span class="o">^</span><span class="n">N</span> <span class="o">*</span> <span class="p">(</span><span class="m">1</span><span class="o">-</span><span class="n">p</span><span class="p">))</span>
+<span class="p">}</span>
+<span class="n">p</span> <span class="o">&lt;-</span> <span class="n">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span>  <span class="m">0.025</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">&lt;-</span> <span class="n">data.frame</span><span class="p">(</span><span class="n">Prior</span> <span class="o">=</span> <span class="n">rep</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">each</span> <span class="o">=</span> <span class="m">24</span><span class="p">),</span> 
+                 <span class="n">N</span> <span class="o">=</span> <span class="n">rep</span><span class="p">(</span><span class="n">c</span><span class="p">(</span><span class="m">0</span><span class="o">:</span><span class="m">3</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">10</span><span class="p">),</span> <span class="n">each</span> <span class="o">=</span> <span class="m">4</span><span class="p">),</span> 
+                 <span class="n">q</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="m">0.51</span><span class="p">,</span> <span class="m">2</span><span class="o">/</span><span class="m">3</span><span class="p">,</span> <span class="m">3</span><span class="o">/</span><span class="m">4</span><span class="p">,</span> <span class="m">4</span><span class="o">/</span><span class="m">5</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+  <span class="n">mutate</span><span class="p">(</span><span class="n">Posterior</span> <span class="o">=</span> <span class="n">posterior_prob</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">Prior</span><span class="p">),</span> 
+         <span class="n">Friends</span> <span class="o">=</span> <span class="n">as.factor</span><span class="p">(</span><span class="n">N</span><span class="p">),</span> 
+         <span class="n">Q</span> <span class="o">=</span> <span class="n">factor</span><span class="p">(</span><span class="n">as.character</span><span class="p">(</span><span class="n">fractions</span><span class="p">(</span><span class="n">q</span><span class="p">)),</span> 
+                    <span class="n">levels</span> <span class="o">=</span> <span class="n">as.character</span><span class="p">(</span><span class="n">fractions</span><span class="p">(</span><span class="n">unique</span><span class="p">(</span><span class="n">q</span><span class="p">)))))</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">MASS</span><span class="p">)</span>
+<span class="n">ggplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Prior</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Posterior</span><span class="p">,</span> <span class="n">colour</span> <span class="o">=</span> <span class="n">Friends</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">geom_line</span><span class="p">()</span> <span class="o">+</span> 
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="n">paste</span><span class="p">(</span><span class="s1">'Posterior vs. Prior for different\nvalues of'</span><span class="p">,</span> 
+                     <span class="s1">'the (individual) Likelihood'</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">facet_wrap</span><span class="p">(</span> <span class="o">~</span> <span class="n">Q</span><span class="p">,</span> <span class="n">nrow</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">coord_fixed</span><span class="p">()</span>
+<span class="n">options</span><span class="p">(</span><span class="n">repr.plot.width</span> <span class="o">=</span> <span class="m">8</span><span class="p">,</span> <span class="n">repr.plot.height</span> <span class="o">=</span> <span class="m">8</span><span class="p">)</span>
+</code></pre>
+</div>
+<p><img src="/output_8_0.png" alt="svg" class="img-responsive" /></p>
+
+
+                            </p>
+                            <p class="text-justify"><br></p>
+
+                            <p><a href="" target="_blank"><strong></strong></a><br>
+                            <a href="" target="_blank"><strong></strong></a><br>
+                            <a href="" target="_blank"><strong></strong></a></p>
+                            <!--<ul class="list-inline item-details">
+                                <li><a href="" target="_blank"><strong></strong></a>
+                                </li>
+                                <li><a href="" target="_blank"><strong></strong></a>
+                                </li>
+                                <li><a href="" target="_blank"><strong></strong></a>
+                                </li>
+                            </ul>-->
+
+                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
                         </div>
                     </div>
                 </div>
