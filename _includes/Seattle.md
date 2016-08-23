@@ -3,29 +3,70 @@
 
 &emsp;&emsp;<a href="https://www.glassdoor.com/Interview/You-re-about-to-get-on-a-plane-to-Seattle-You-want-to-know-if-you-should-bring-an-umbrella-You-call-3-random-friends-of-y-QTN_519262.htm" target="_blank">Facebook interview question posted on Glassdoor</a>.
 
-Most answers posted on the link above are $$\left(\frac{2}{3}\right)^3 = \frac{8}{9}$$, which is the probability that all friends say it rains provided that it actually rains... but we are interested in the opposite, the probability that it rains provided that all friends say it does!
+Most answers posted on the link above are:
 
-Thus, we need to apply **Bayes' theorem**, which states that the posterior probability (the probability of an hypothesis $$H$$ conditional on a given body of data (evidence, $$E$$) can be calculated as:
+$$\left(\frac{2}{3}\right)^3 = \frac{8}{27}$$
 
-$$\begin{aligned} \Pr\left(H \mid E\right) & = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\Pr\left(E\right)} \\ & = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\displaystyle\sum_{h \in \mathbb{H}} \Pr\left(E \mid h\right) \cdot \Pr\left(h\right)} \end{aligned}$$
+which is the probability that all friends say it is raining provided that it's true... but we are interested in the opposite, the probability that it is raining provided that all friends say that.
 
-In this problem:
+Another common answer is based on a correct idea:
 
-$$\begin{aligned} H & :  \text{it rains in city }C \\ E & : \text{all friends say that it rains} \end{aligned}$$
+$$\begin{aligned}
+\Pr\left(H \mid E\right) & = \frac{\Pr\left(H, E\right)}{\Pr\left(E\right)} \\ 
+& = \frac{\Pr\left(H, E\right)}{\displaystyle\sum_{h \in \mathbb{H}} \Pr\left(h, E\right)}
+\end{aligned}$$
 
-$$H$$ is a binary event, so:
+where
 
-$$\Pr\left(H \mid E\right) = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right) + \Pr\left(E \mid \bar{H}\right) \cdot \Pr\left(\bar{H}\right)}$$
+$$\begin{aligned} H & :  \text{it is raining in city }C \\ E & : \text{all friends say it is raining} \end{aligned}$$
 
-Let $$p$$ be the probability of rain in $$C$$, and $$q$$ be the probability that one friend tells the truth. Then, if there are $$N$$ friends:
+$$h$$ is a binary event, so:
+
+$$\Pr\left(H \mid E\right) = \frac{\Pr\left(H, E\right)}{\Pr\left(H, E\right) + \Pr\left(\bar{H}, E\right)}$$
+
+But those answers then mix joint and conditional probabilities, getting yet a wrong result (which is correct only if the probability of rain in Seattle is $$0.5$$):
+
+$$\frac{8/27}{8/27 + 1/27} = \frac{8}{9}$$
+
+$$\left(2/3\right)^3 = 8/27$$ is not the joint probability that all friends say the same thing (it is raining) **and** that is true, but the probability that all friends say that it is raining **conditional** on the fact that it is raining.
+
+Let's consider the two extreme cases to confirm that the solution above is not always correct. If it is always raining in Seattle,
+
+$$\begin{aligned}H = \Omega & \Rightarrow \Pr(H) = 1 \\
+& \Rightarrow
+\left\{\begin{matrix}
+\Pr(H, E) & = & \Pr(E) & = & 8/27 \\ 
+\Pr\left(\bar{H}, E \right) & = & 0
+\end{matrix}\right. \\
+& \Rightarrow \Pr(H \mid E) = 1
+\end{aligned}$$
+
+If it never rains in Seattle,
+
+$$\begin{aligned}H = \varnothing & \Rightarrow \Pr(H) = 0 \\
+& \Rightarrow
+\left\{\begin{matrix}
+\Pr(H, E) & = & 0  \\ 
+\Pr\left(\bar{H}, E \right) & = & \Pr(E) & = & 1/27 
+\end{matrix}\right. \\ 
+& \Rightarrow \Pr(H \mid E) = 0
+\end{aligned}$$
+
+The tricky part of the problem, since we may be biased to think that the solution is fixed, is that there is an unknown parameter ($$p$$, the probability of rain in Seattle), which the solution depends on. We need to apply the **Bayes' theorem**, which states that the posterior probability (the probability of an hypothesis $$H$$ conditional on a given body of data (the evidence, $$E$$) can be calculated as:
+
+$$\begin{aligned}
+\Pr\left(H \mid E\right) & = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\Pr\left(E\right)} \\ 
+& = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\displaystyle\sum_{h \in \mathbb{H}} \Pr\left(E \mid h\right) \cdot \Pr\left(h\right)} \\ 
+& = \frac{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right)}{\Pr\left(E \mid H\right) \cdot \Pr\left(H\right) + \Pr\left(E \mid \bar{H}\right) \cdot \Pr\left(\bar{H}\right)}
+\end{aligned}$$
+
+Let $$q$$ the probability that one friend tells the truth. Then, if there are $$N$$ friends:
 
 $$\Pr\left(H \mid E\right) = \frac{q^N \cdot p}{q^N \cdot p + (1 - q)^N \cdot (1 - p)}$$
 
-We are told that $$3$$ is the number of friends and that $$q = \frac{2}{3}$$. Hence:
+We are told that $$3$$ is the number of friends and that $$q = 2/3$$. Hence:
 
-$$\begin{aligned} \Pr\left(H \mid E\right) & = \frac{\left(\frac{2}{3}\right)^3 \cdot p}{\left(\frac{2}{3}\right)^3 \cdot p + \left(\frac{1}{3}\right)^3 \cdot (1 - p)} \\ & = \frac{8p}{8p + (1-p)} \\ & = \frac{8p}{7p + 1} \end{aligned}$$
-
-The tricky part of the problem is this unknown parameter, $$p$$, which the solution depends on: we may be biased to think that the solution to this kind of problem is fixed, a particular number.
+$$\begin{aligned} \Pr\left(H \mid E\right) & = \frac{\left(\frac{2}{3}\right)^3 \cdot p}{\left(\frac{2}{3}\right)^3 \cdot p + \left(\frac{1}{3}\right)^3 \cdot (1 - p)} \\ & = \frac{8p}{8p + (1-p)} \\ & = \mathbf{\frac{8p}{7p + 1}} \end{aligned}$$
 
 Let's see what the posterior probability would be for a few possible values of the prior probability:
 
@@ -39,13 +80,15 @@ $$prior = \begin{Bmatrix}
 \Rightarrow
 posterior = \left\{\begin{matrix}
 0 \\ 
-8/11 \\ 
-8/9 \\ 
-24/25 \\ 
+8/11 & \approx & 0.73 \\ 
+8/9 & \approx & 0.89 \\ 
+24/25 & = & 0.96 \\ 
 1
 \end{matrix}\right.$$
 
-Let's check that the solution above is right, simulating the problem in R (for all possibles values of $$p$$ from $$0$$ to $$1$$, in steps of $$0.05$$):
+Also, note that the posterior reaches a value of $$1/2$$ for a prior as low as $$1/9 \approx 0.11$$.
+
+Let's confirm that the solution above is right, simulating the problem in R (for all possibles values of $$p$$ from $$0$$ to $$1$$, in steps of $$0.05$$):
 
 <!--
 ```R
@@ -131,8 +174,8 @@ set.seed(<span class="pl-c1">12345</span>)
          <span class="pl-v">B</span> <span class="pl-k">=</span> ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>)), 
          <span class="pl-v">C</span> <span class="pl-k">=</span> ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>))) <span class="pl-k">%&gt;%</span> 
   mutate(<span class="pl-v">ABC</span> <span class="pl-k">=</span> paste0(<span class="pl-smi">A</span>, <span class="pl-smi">B</span>, <span class="pl-smi">C</span>)) <span class="pl-k">%&gt;%</span> select(<span class="pl-smi">p</span>, <span class="pl-smi">r</span>, <span class="pl-smi">ABC</span>) <span class="pl-k">%&gt;%</span> ungroup()
-<span class="pl-c"># A, B, C: 1 rains, 0 not</span>
-<span class="pl-c"># r: 1 rains, 0 not</span>
+<span class="pl-c"># A, B, C: 1 raining, 0 not</span>
+<span class="pl-c"># r: 1 raining, 0 not</span>
 <span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> sample_n(<span class="pl-c1">10</span>) <span class="pl-c"># show 10 of the 21*N rows</span></pre></div>
 
 <div class="highlight highlight-source-r"><pre><span class="pl-smi">Source</span><span class="pl-k">:</span> <span class="pl-smi">local</span> <span class="pl-smi">data</span> <span class="pl-smi">frame</span> [<span class="pl-c1">10</span> <span class="pl-smi">x</span> <span class="pl-c1">3</span>]
@@ -150,8 +193,8 @@ set.seed(<span class="pl-c1">12345</span>)
 <span class="pl-c1">9</span>   <span class="pl-c1">0.55</span>     <span class="pl-c1">1</span>   <span class="pl-c1">101</span>
 <span class="pl-c1">10</span>  <span class="pl-c1">0.60</span>     <span class="pl-c1">0</span>   <span class="pl-c1">101</span></pre></div>
 
-<div class="highlight highlight-source-r"><pre><span class="pl-c"># Filter the evidence: all 3 say it rains</span>
-<span class="pl-c"># And group by each value of the prior Prob(it rains), p</span>
+<div class="highlight highlight-source-r"><pre><span class="pl-c"># Filter the evidence: all 3 say it is raining</span>
+<span class="pl-c"># And group by each value of the prior Prob(it is raining), p</span>
 <span class="pl-smi">data_interest</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> filter(<span class="pl-smi">ABC</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>111<span class="pl-pds">'</span></span>) <span class="pl-k">%&gt;%</span> group_by(<span class="pl-smi">p</span>) 
 <span class="pl-c"># For each value of the prior (p), what is the posterior?</span>
 <span class="pl-c"># (i.e., the mean number of cases where it rain, r == 1)</span>
@@ -185,11 +228,9 @@ set.seed(<span class="pl-c1">12345</span>)
 <span class="pl-c1">20</span>  <span class="pl-c1">0.95</span>     <span class="pl-c1">0.995</span>                 <span class="pl-c1">0.993</span>
 <span class="pl-c1">21</span>  <span class="pl-c1">1.00</span>     <span class="pl-c1">1.000</span>                 <span class="pl-c1">1.000</span></pre></div>
 
-Now let's consider a more generic case, where not only $$p$$, but also the number of friends, $$N$$, and the probability that any of them tells you the truth, $$q$$, are not fixed. This analysis will give us the *morality* of this problem, which could be "Always trust your friends (especially the more you have!), provided that they tell the truth more often than not" :)
+Now let's consider a more generic case, where not only $$p$$, but also the number of friends, $$N$$, and the probability that any of them tells you the truth, $$q$$, are not fixed. This analysis will give us the *morality* of this problem, which could be: "Always trust your friends (especially the more you have!), provided that they tell the truth more often than not."
 
-Without loss of generality, let's assume that $$q$$ is a positive rational number, and hence can be written as $$\frac{a}{b}$$, where $$a,b \in \mathbb{N}$$. We want to focus on the case where our friends are more likely to tell the truth, so the following conditions must hold:
-
-$$q \leq 1 \Rightarrow b \geq a$$
+Without loss of generality, let's assume that $$q$$ is a positive rational number, and hence can be written as $$a/b$$, where $$a,b \in \mathbb{N}; b \geq a$$. We want to focus on the case where our friends are more likely to tell the truth, so the following condition must hold:
 
 $$q \geq \frac{1}{2} \Rightarrow \frac{b}{a} \leq 2 \Rightarrow \frac{b}{a} - 1 \leq 1$$
 
@@ -200,18 +241,19 @@ $$\begin{aligned}\Pr\left(H \mid E\right) & = \frac{\left(\frac{a}{b}\right)^N \
 &  = \frac{1}{1 + \left(\frac{b}{a} - 1\right)^N \cdot \frac{1-p}{p}} \\
 \end{aligned}$$
 
-Since $$\frac{b}{a} - 1 \leq 1$$, the limit of the posterior probability as $$N$$ approaches infinity is $$1$$, regardless of the value of $$p$$.
+Since $$b/a - 1 \leq 1$$, the limit of the posterior probability as $$N$$ approaches infinity is $$1$$, regardless of the value of $$p$$ (for $$p > 0$$).
 
-I.e., if a sufficiently large number of friends tell you that it rains in the desert, and the chances that each one of them is messing with you are less than 1/2, bring an umbrella with you. For $$N = 10$$ (and $$q = 2/3$$), the posterior is greater than $$0.9$$ for a prior as low as $$0.009$$.
+I.e., if a sufficiently large number of friends tell you that it is raining in the desert, and the chances that each one of them is messing with you are less than $$1/2$$, bring an umbrella with you. For $$N = 10$$ (and $$q = 2/3$$), the posterior is greater than $$0.9$$ for a prior as low as $$0.009$$.
 
-Let's finish by plotting the posterior against the prior for a few possible values of $$q$$ and $$N$$:
+Let's finish by plotting the posterior against the prior for a few possible values of $$q$$ and $$N$$ (our case of interest, $$N=3, q=2/3$$ corresponds to the light blue line in the upper-right graph). As expected, if $$N = 0$$ (i.e., we have no evidence), the posterior equals the prior.
 
 <!--
 ```R
 posterior_prob <- function(q, N, p) {
   q^N * p / (q^N * p + (1 - q)^N * (1-p))
 }
-p <- seq(0, 1,  0.025)
+p <- seq(0, 1,  0.01)
+library(MASS)
 df <- data.frame(Prior = rep(p, each = 24), 
                  N = rep(c(0:3, 5, 10), each = 4), 
                  q = c(0.51, 2/3, 3/4, 4/5)) %>% 
@@ -220,10 +262,9 @@ df <- data.frame(Prior = rep(p, each = 24),
          Q = factor(as.character(fractions(q)), 
                     levels = as.character(fractions(unique(q)))))
 library(ggplot2)
-library(MASS)
 ggplot(data = df, aes(x = Prior, y = Posterior, colour = Friends)) + 
-  geom_line() + 
-  labs(title = paste('Posterior vs. Prior for different\nvalues of', 
+  geom_line() + scale_color_hue(c = 240) + 
+  labs(title = paste('Posterior vs. Prior for 4 possible\nvalues of', 
                      'the (individual) Likelihood')) + 
   facet_wrap( ~ Q, nrow = 2) + coord_fixed()
 options(repr.plot.width = 8, repr.plot.height = 8)
@@ -233,7 +274,8 @@ options(repr.plot.width = 8, repr.plot.height = 8)
 <div class="highlight highlight-source-r"><pre><span class="pl-en">posterior_prob</span> <span class="pl-k">&lt;-</span> <span class="pl-k">function</span>(<span class="pl-smi">q</span>, <span class="pl-smi">N</span>, <span class="pl-smi">p</span>) {
   <span class="pl-smi">q</span><span class="pl-k">^</span><span class="pl-smi">N</span> <span class="pl-k">*</span> <span class="pl-smi">p</span> <span class="pl-k">/</span> (<span class="pl-smi">q</span><span class="pl-k">^</span><span class="pl-smi">N</span> <span class="pl-k">*</span> <span class="pl-smi">p</span> <span class="pl-k">+</span> (<span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>)<span class="pl-k">^</span><span class="pl-smi">N</span> <span class="pl-k">*</span> (<span class="pl-c1">1</span><span class="pl-k">-</span><span class="pl-smi">p</span>))
 }
-<span class="pl-smi">p</span> <span class="pl-k">&lt;-</span> seq(<span class="pl-c1">0</span>, <span class="pl-c1">1</span>,  <span class="pl-c1">0.025</span>)
+<span class="pl-smi">p</span> <span class="pl-k">&lt;-</span> seq(<span class="pl-c1">0</span>, <span class="pl-c1">1</span>,  <span class="pl-c1">0.01</span>)
+library(<span class="pl-smi">MASS</span>)
 <span class="pl-smi">df</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">Prior</span> <span class="pl-k">=</span> rep(<span class="pl-smi">p</span>, <span class="pl-v">each</span> <span class="pl-k">=</span> <span class="pl-c1">24</span>), 
                  <span class="pl-v">N</span> <span class="pl-k">=</span> rep(c(<span class="pl-c1">0</span><span class="pl-k">:</span><span class="pl-c1">3</span>, <span class="pl-c1">5</span>, <span class="pl-c1">10</span>), <span class="pl-v">each</span> <span class="pl-k">=</span> <span class="pl-c1">4</span>), 
                  <span class="pl-v">q</span> <span class="pl-k">=</span> c(<span class="pl-c1">0.51</span>, <span class="pl-c1">2</span><span class="pl-k">/</span><span class="pl-c1">3</span>, <span class="pl-c1">3</span><span class="pl-k">/</span><span class="pl-c1">4</span>, <span class="pl-c1">4</span><span class="pl-k">/</span><span class="pl-c1">5</span>)) <span class="pl-k">%&gt;%</span> 
@@ -242,12 +284,12 @@ options(repr.plot.width = 8, repr.plot.height = 8)
          <span class="pl-v">Q</span> <span class="pl-k">=</span> <span class="pl-k">factor</span>(as.character(fractions(<span class="pl-smi">q</span>)), 
                     <span class="pl-v">levels</span> <span class="pl-k">=</span> as.character(fractions(unique(<span class="pl-smi">q</span>)))))
 library(<span class="pl-smi">ggplot2</span>)
-library(<span class="pl-smi">MASS</span>)
 ggplot(<span class="pl-v">data</span> <span class="pl-k">=</span> <span class="pl-smi">df</span>, aes(<span class="pl-v">x</span> <span class="pl-k">=</span> <span class="pl-smi">Prior</span>, <span class="pl-v">y</span> <span class="pl-k">=</span> <span class="pl-smi">Posterior</span>, <span class="pl-v">colour</span> <span class="pl-k">=</span> <span class="pl-smi">Friends</span>)) <span class="pl-k">+</span> 
-  geom_line() <span class="pl-k">+</span> 
-  labs(<span class="pl-v">title</span> <span class="pl-k">=</span> paste(<span class="pl-s"><span class="pl-pds">'</span>Posterior vs. Prior for different<span class="pl-cce">\n</span>values of<span class="pl-pds">'</span></span>, 
+  geom_line() <span class="pl-k">+</span> +</span> 
+  scale_color_hue(<span class="pl-v">c</span> <span class="pl-k">=</span> <span class="pl-c1">240</span>) <span class="pl-k">+</span> 
+  labs(<span class="pl-v">title</span> <span class="pl-k">=</span> paste(<span class="pl-s"><span class="pl-pds">'</span>Posterior vs. Prior for 4 possible<span class="pl-cce">\n</span>values of<span class="pl-pds">'</span></span>, 
                      <span class="pl-s"><span class="pl-pds">'</span>the (individual) Likelihood<span class="pl-pds">'</span></span>)) <span class="pl-k">+</span> 
   facet_wrap( <span class="pl-k">~</span> <span class="pl-smi">Q</span>, <span class="pl-v">nrow</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>) <span class="pl-k">+</span> coord_fixed()
 options(<span class="pl-v">repr.plot.width</span> <span class="pl-k">=</span> <span class="pl-c1">8</span>, <span class="pl-v">repr.plot.height</span> <span class="pl-k">=</span> <span class="pl-c1">8</span>)</pre></div>
 
-![svg](/output_8_0.png){:class="img-responsive"}
+![svg](/img/output_8_0.png){:class="img-responsive"}
