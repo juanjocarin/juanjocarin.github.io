@@ -18,7 +18,10 @@ $$\begin{aligned}
 
 where
 
-$$\begin{aligned} H & :  \text{it is raining in city }C \\ E & : \text{all friends say it is raining} \end{aligned}$$
+$$\begin{aligned}
+H & : \text{it is raining in Seattle} \\ 
+E & : \text{all friends say it is raining}
+\end{aligned}$$
 
 $$h$$ is a binary event, so:
 
