@@ -32,8 +32,3 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-

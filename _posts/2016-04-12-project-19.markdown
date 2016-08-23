@@ -1,9 +1,0 @@
----
-title: Seattle Rain
-layout: default
-modal-id: 19
-gist: true
-use_math: true
-date: 2016-04-12
-description: 
----

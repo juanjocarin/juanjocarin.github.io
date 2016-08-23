@@ -1,11 +1,6 @@
  <!-- Portfolio Modals -->
  {% for post in site.posts %}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-
     <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -21,14 +16,7 @@
                             <!--<span class="fa-stack fa-2x">
                             <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
                             <i class="fa {{ post.img }}"></i></a></span>-->
-                            <h4 class="text-center">{{ post.title }}</h4>
-                            <p class="text-justify">
-                            {% if post.title contains "Seattle" %}
-                                {% capture my_include %}
-                                    {% include Seattle.md %}
-                                {% endcapture %}
-                                {{ my_include | markdownify }}
-                            {% endif %}</p>
+                            <h4>{{ post.title }}</h4>
                             <p class="text-justify"><br>{{ post.description }}</p>
 
                             <p><a href="{{ post.link1 }}" target="_blank"><strong>{{ post.link1-text }}</strong></a><br>
@@ -43,7 +31,7 @@
                                 </li>
                             </ul>-->
 
-                            <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
                 </div>
