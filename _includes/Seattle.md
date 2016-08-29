@@ -167,69 +167,143 @@ Source: local data frame [21 x 3]
 ```
 -->
 
+
 <div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">dplyr</span>)
 set.seed(<span class="pl-c1">12345</span>)
+<span class="pl-c"># Simulate N cases for each probability of rain in Seattle (p)</span>
+<span class="pl-c"># in the whole [0, 1] range, in steps of 0.05</span>
 <span class="pl-smi">N</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">5e3</span> <span class="pl-c"># simulations (per value of p)</span>
 <span class="pl-smi">q</span> <span class="pl-k">&lt;-</span> <span class="pl-c1">2</span><span class="pl-k">/</span><span class="pl-c1">3</span> <span class="pl-c"># prob of a friend telling the truth</span>
 <span class="pl-smi">data</span> <span class="pl-k">&lt;-</span> <span class="pl-k">data.frame</span>(<span class="pl-v">p</span> <span class="pl-k">=</span> rep(seq(<span class="pl-v">from</span> <span class="pl-k">=</span> <span class="pl-c1">0</span>, <span class="pl-v">to</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>, <span class="pl-v">by</span> <span class="pl-k">=</span> <span class="pl-c1">0.05</span>), <span class="pl-v">each</span> <span class="pl-k">=</span> <span class="pl-smi">N</span>))
-<span class="pl-smi">data</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> rowwise() <span class="pl-k">%&gt;%</span> mutate(<span class="pl-v">r</span> <span class="pl-k">=</span> rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">p</span>)) <span class="pl-k">%&gt;%</span> 
-  mutate(<span class="pl-v">A</span> <span class="pl-k">=</span> ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>)), 
-         <span class="pl-v">B</span> <span class="pl-k">=</span> ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>)), 
-         <span class="pl-v">C</span> <span class="pl-k">=</span> ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>))) <span class="pl-k">%&gt;%</span> 
-  mutate(<span class="pl-v">ABC</span> <span class="pl-k">=</span> paste0(<span class="pl-smi">A</span>, <span class="pl-smi">B</span>, <span class="pl-smi">C</span>)) <span class="pl-k">%&gt;%</span> select(<span class="pl-smi">p</span>, <span class="pl-smi">r</span>, <span class="pl-smi">ABC</span>) <span class="pl-k">%&gt;%</span> ungroup()
-<span class="pl-c"># A, B, C: 1 raining, 0 not</span>
-<span class="pl-c"># r: 1 raining, 0 not</span>
-<span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> sample_n(<span class="pl-c1">10</span>) <span class="pl-c"># show 10 of the 21*N rows</span></pre></div>
+<span class="pl-smi">data</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> rowwise() <span class="pl-k">%&gt;%</span> mutate(<span class="pl-v">r</span> <span class="pl-k">=</span> as.logical(rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">p</span>))) <span class="pl-k">%&gt;%</span> 
+  mutate(<span class="pl-v">A</span> <span class="pl-k">=</span> as.logical(ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>))), 
+         <span class="pl-v">B</span> <span class="pl-k">=</span> as.logical(ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>))), 
+         <span class="pl-v">C</span> <span class="pl-k">=</span> as.logical(ifelse(<span class="pl-smi">r</span> <span class="pl-k">==</span> <span class="pl-c1">1</span>, rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-smi">q</span>), 
+                               rbinom(<span class="pl-c1">1</span>, <span class="pl-c1">1</span>, <span class="pl-c1">1</span> <span class="pl-k">-</span> <span class="pl-smi">q</span>)))) <span class="pl-k">%&gt;%</span> ungroup()
+<span class="pl-c"># p: probability that it is raining in Seattle</span>
+<span class="pl-c"># r: it is raining in Seattle</span>
+<span class="pl-c"># A, B, C: friend A, B, C says it is raining</span>
+  <span class="pl-c"># (not to be confused with he or she is telling the truth)</span>
+<span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> sample_n(<span class="pl-c1">10</span>) <span class="pl-k">%&gt;%</span> print(<span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">10</span>) <span class="pl-c"># show 10 of the 21*N rows</span></pre></div>
 
-<div class="highlight highlight-source-r"><pre><span class="pl-smi">Source</span><span class="pl-k">:</span> <span class="pl-smi">local</span> <span class="pl-smi">data</span> <span class="pl-smi">frame</span> [<span class="pl-c1">10</span> <span class="pl-smi">x</span> <span class="pl-c1">3</span>]
+<div class="highlight highlight-source-r"><pre><span class="pl-r">Source: local data frame [</span><span class="pl-c1">10</span><span class="pl-r"> x </span><span class="pl-c1">5</span><span class="pl-r">]
 
-       <span class="pl-smi">p</span>     <span class="pl-smi">r</span>   <span class="pl-smi">ABC</span>
-   <span class="pl-k">&lt;</span><span class="pl-smi">dbl</span><span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span><span class="pl-smi">int</span><span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span><span class="pl-smi">chr</span><span class="pl-k">&gt;</span>
-<span class="pl-c1">1</span>   <span class="pl-c1">0.70</span>     <span class="pl-c1">1</span>   <span class="pl-c1">111</span>
-<span class="pl-c1">2</span>   <span class="pl-c1">0.65</span>     <span class="pl-c1">1</span>   <span class="pl-c1">101</span>
-<span class="pl-c1">3</span>   <span class="pl-c1">0.85</span>     <span class="pl-c1">1</span>   <span class="pl-c1">111</span>
-<span class="pl-c1">4</span>   <span class="pl-c1">0.90</span>     <span class="pl-c1">1</span>   <span class="pl-c1">010</span>
-<span class="pl-c1">5</span>   <span class="pl-c1">0.80</span>     <span class="pl-c1">1</span>   <span class="pl-c1">011</span>
-<span class="pl-c1">6</span>   <span class="pl-c1">0.75</span>     <span class="pl-c1">1</span>   <span class="pl-c1">111</span>
-<span class="pl-c1">7</span>   <span class="pl-c1">0.95</span>     <span class="pl-c1">1</span>   <span class="pl-c1">110</span>
-<span class="pl-c1">8</span>   <span class="pl-c1">0.70</span>     <span class="pl-c1">1</span>   <span class="pl-c1">011</span>
-<span class="pl-c1">9</span>   <span class="pl-c1">0.55</span>     <span class="pl-c1">1</span>   <span class="pl-c1">101</span>
-<span class="pl-c1">10</span>  <span class="pl-c1">0.60</span>     <span class="pl-c1">0</span>   <span class="pl-c1">101</span></pre></div>
+       p     r     A     B     C
+   </span><span class="pl-k">&lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt; &lt;</span><span class="pl-r">lgl</span><span class="pl-k">&gt; &lt;</span><span class="pl-r">lgl</span><span class="pl-k">&gt; &lt;</span><span class="pl-r">lgl</span><span class="pl-k">&gt; &lt;</span><span class="pl-r">lgl</span><span class="pl-k">&gt;</span><span class="pl-c1">
+1   0.70  TRUE  TRUE  TRUE  TRUE
+2   0.65  TRUE  TRUE FALSE  TRUE
+3   0.85  TRUE  TRUE  TRUE  TRUE
+4   0.90  TRUE FALSE  TRUE FALSE
+5   0.80  TRUE FALSE  TRUE  TRUE
+6   0.75  TRUE  TRUE  TRUE  TRUE
+7   0.95  TRUE  TRUE  TRUE FALSE
+8   0.70  TRUE FALSE  TRUE  TRUE
+9   0.55  TRUE  TRUE FALSE  TRUE
+10  0.60 FALSE  TRUE FALSE  TRUE
+</span></pre></div>
 
-<div class="highlight highlight-source-r"><pre><span class="pl-c"># Filter the evidence: all 3 say it is raining</span>
-<span class="pl-c"># And group by each value of the prior Prob(it is raining), p</span>
-<span class="pl-smi">data_interest</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> filter(<span class="pl-smi">ABC</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>111<span class="pl-pds">'</span></span>) <span class="pl-k">%&gt;%</span> group_by(<span class="pl-smi">p</span>) 
+<div class="highlight highlight-source-r"><pre><span class="pl-c"># Check proportions of r (compared to p)</span>
+<span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> group_by(<span class="pl-smi">p</span>) <span class="pl-k">%&gt;%</span> summarize(<span class="pl-v">Real_Prob_Rain</span> <span class="pl-k">=</span> mean(<span class="pl-smi">r</span>)) <span class="pl-k">%&gt;%</span> 
+  rename(<span class="pl-v">Prob_Rain</span> <span class="pl-k">=</span> <span class="pl-smi">p</span>) <span class="pl-k">%&gt;%</span> print(<span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">Inf</span>)</pre></div>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-r">Source: local data frame [</span><span class="pl-c1">21</span><span class="pl-r"> x </span><span class="pl-c1">2</span><span class="pl-r">]
+
+   Prob_Rain Real_Prob_Rain
+       </span><span class="pl-k">&lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt;          &lt;</span><span class="pl-r">dbl&gt;</span><span class="pl-c1">
+1       0.00         0.0000
+2       0.05         0.0460
+3       0.10         0.0978
+4       0.15         0.1494
+5       0.20         0.1938
+6       0.25         0.2466
+7       0.30         0.2956
+8       0.35         0.3390
+9       0.40         0.3934
+10      0.45         0.4524
+11      0.50         0.4994
+12      0.55         0.5430
+13      0.60         0.5900
+14      0.65         0.6586
+15      0.70         0.6908
+16      0.75         0.7406
+17      0.80         0.8004
+18      0.85         0.8504
+19      0.90         0.8942
+20      0.95         0.9492
+21      1.00         1.0000
+</span></pre></div>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-c"># Check proportions of friends telling the truth (compared to q)</span>
+<span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> rename(<span class="pl-v">Raining</span> <span class="pl-k">=</span> <span class="pl-smi">r</span>) <span class="pl-k">%&gt;%</span> group_by(<span class="pl-smi">Raining</span>) <span class="pl-k">%&gt;%</span> 
+  summarize(<span class="pl-s"><span class="pl-pds">"</span>%Cases_All_Friends_Say_Raining<span class="pl-pds">"</span></span> <span class="pl-k">=</span> mean(<span class="pl-smi">A</span> <span class="pl-k">+</span> <span class="pl-smi">B</span> <span class="pl-k">+</span> <span class="pl-smi">C</span>) <span class="pl-k">/</span> <span class="pl-c1">3</span>) <span class="pl-k">%&gt;%</span> 
+  print(<span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">Inf</span>)
+<span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> rename(<span class="pl-v">Prob_Rain</span> <span class="pl-k">=</span> <span class="pl-smi">p</span>, <span class="pl-v">Raining</span> <span class="pl-k">=</span> <span class="pl-smi">r</span>) <span class="pl-k">%&gt;%</span> 
+  group_by(<span class="pl-smi">Prob_Rain</span>, <span class="pl-smi">Raining</span>) <span class="pl-k">%&gt;%</span> 
+  summarize(<span class="pl-s"><span class="pl-pds">"</span>#Cases<span class="pl-pds">"</span></span> <span class="pl-k">=</span> n(), 
+            <span class="pl-s"><span class="pl-pds">"</span>%Cases_All_Friends_Say_Raining<span class="pl-pds">"</span></span> <span class="pl-k">=</span> mean(<span class="pl-smi">A</span> <span class="pl-k">+</span> <span class="pl-smi">B</span> <span class="pl-k">+</span> <span class="pl-smi">C</span>) <span class="pl-k">/</span> <span class="pl-c1">3</span>) <span class="pl-k">%&gt;%</span> 
+  print(<span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">11</span>)</pre></div>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-r">Source: local data frame [</span><span class="pl-c1">2</span><span class="pl-r"> x </span><span class="pl-c1">2</span><span class="pl-r">]
+
+  Raining %Cases_All_Friends_Say_Raining
+    </span><span class="pl-k">&lt;</span><span class="pl-r">lgl</span><span class="pl-k">&gt;                          &lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt;</span><span class="pl-c1">
+1   FALSE                      0.3322547
+2    TRUE                      0.6649218</span>
+
+<span class="pl-r">Source: local data frame [</span><span class="pl-c1">40</span><span class="pl-r"> x </span><span class="pl-c1">4</span><span class="pl-r">]
+Groups: Prob_Rain [?]
+
+   Prob_Rain Raining #Cases %Cases_All_Friends_Say_Raining
+       </span><span class="pl-k">&lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt;   &lt;</span><span class="pl-r">lgl</span><span class="pl-k">&gt;  &lt;</span><span class="pl-r">int</span><span class="pl-k">&gt;                          &lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt;</span><span class="pl-c1">
+1       0.00   FALSE   5000                      0.3332667
+2       0.05   FALSE   4770                      0.3243885
+3       0.05    TRUE    230                      0.6826087
+4       0.10   FALSE   4511                      0.3302298
+5       0.10    TRUE    489                      0.6659850
+6       0.15   FALSE   4253                      0.3359981
+7       0.15    TRUE    747                      0.6604195
+8       0.20   FALSE   4031                      0.3304391
+9       0.20    TRUE    969                      0.6584107
+10      0.25   FALSE   3767                      0.3342182
+11      0.25    TRUE   1233                      0.6580157
+..       ...     ...    ...                            ...
+</span></pre></div>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-c"># Filter the evidence: all 3 say it rains</span>
+<span class="pl-c"># And group by each value of the prior Prob(it rains), p</span>
+<span class="pl-smi">data_interest</span> <span class="pl-k">&lt;-</span> <span class="pl-smi">data</span> <span class="pl-k">%&gt;%</span> filter(<span class="pl-smi">A</span> <span class="pl-k">*</span> <span class="pl-smi">B</span> <span class="pl-k">*</span> <span class="pl-smi">C</span> <span class="pl-k">==</span> <span class="pl-c1">TRUE</span>) <span class="pl-k">%&gt;%</span> group_by(<span class="pl-smi">p</span>)
 <span class="pl-c"># For each value of the prior (p), what is the posterior?</span>
 <span class="pl-c"># (i.e., the mean number of cases where it rain, r == 1)</span>
-<span class="pl-smi">data_interest</span> <span class="pl-k">%&gt;%</span> summarize(<span class="pl-v">posterior</span> <span class="pl-k">=</span> round(mean(<span class="pl-smi">r</span>), <span class="pl-c1">3</span>)) <span class="pl-k">%&gt;%</span> 
-  mutate(<span class="pl-v">posterior_theoretical</span> <span class="pl-k">=</span> round(<span class="pl-c1">8</span><span class="pl-k">*</span><span class="pl-smi">p</span> <span class="pl-k">/</span> (<span class="pl-c1">1</span> <span class="pl-k">+</span> <span class="pl-c1">7</span><span class="pl-k">*</span><span class="pl-smi">p</span>), <span class="pl-c1">3</span>)) <span class="pl-k">%&gt;%</span> 
-  rename(<span class="pl-v">prior</span> <span class="pl-k">=</span> <span class="pl-smi">p</span>) <span class="pl-k">%&gt;%</span> print(<span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">Inf</span>)</pre></div>
+<span class="pl-smi">data_interest</span> <span class="pl-k">%&gt;%</span> summarize(<span class="pl-v">Posterior</span> <span class="pl-k">=</span> round(mean(<span class="pl-smi">r</span>), <span class="pl-c1">3</span>)) <span class="pl-k">%&gt;%</span> 
+  mutate(<span class="pl-v">Posterior_Theoretical</span> <span class="pl-k">=</span> round(<span class="pl-c1">8</span><span class="pl-k">*</span><span class="pl-smi">p</span> <span class="pl-k">/</span> (<span class="pl-c1">1</span> <span class="pl-k">+</span> <span class="pl-c1">7</span><span class="pl-k">*</span><span class="pl-smi">p</span>), <span class="pl-c1">3</span>)) <span class="pl-k">%&gt;%</span> 
+  rename(<span class="pl-v">Prior</span> <span class="pl-k">=</span> <span class="pl-smi">p</span>) <span class="pl-k">%&gt;%</span> print(<span class="pl-v">n</span> <span class="pl-k">=</span> <span class="pl-c1">Inf</span>)</pre></div>
 
-<div class="highlight highlight-source-r"><pre><span class="pl-smi">Source</span><span class="pl-k">:</span> <span class="pl-smi">local</span> <span class="pl-smi">data</span> <span class="pl-smi">frame</span> [<span class="pl-c1">21</span> <span class="pl-smi">x</span> <span class="pl-c1">3</span>]
-
-   <span class="pl-smi">prior</span> <span class="pl-smi">posterior</span> <span class="pl-smi">posterior_theoretical</span>
-   <span class="pl-k">&lt;</span><span class="pl-smi">dbl</span><span class="pl-k">&gt;</span>     <span class="pl-k">&lt;</span><span class="pl-smi">dbl</span><span class="pl-k">&gt;</span>                 <span class="pl-k">&lt;</span><span class="pl-smi">dbl</span><span class="pl-k">&gt;</span>
-<span class="pl-c1">1</span>   <span class="pl-c1">0.00</span>     <span class="pl-c1">0.000</span>                 <span class="pl-c1">0.000</span>
-<span class="pl-c1">2</span>   <span class="pl-c1">0.05</span>     <span class="pl-c1">0.279</span>                 <span class="pl-c1">0.296</span>
-<span class="pl-c1">3</span>   <span class="pl-c1">0.10</span>     <span class="pl-c1">0.498</span>                 <span class="pl-c1">0.471</span>
-<span class="pl-c1">4</span>   <span class="pl-c1">0.15</span>     <span class="pl-c1">0.587</span>                 <span class="pl-c1">0.585</span>
-<span class="pl-c1">5</span>   <span class="pl-c1">0.20</span>     <span class="pl-c1">0.643</span>                 <span class="pl-c1">0.667</span>
-<span class="pl-c1">6</span>   <span class="pl-c1">0.25</span>     <span class="pl-c1">0.705</span>                 <span class="pl-c1">0.727</span>
-<span class="pl-c1">7</span>   <span class="pl-c1">0.30</span>     <span class="pl-c1">0.778</span>                 <span class="pl-c1">0.774</span>
-<span class="pl-c1">8</span>   <span class="pl-c1">0.35</span>     <span class="pl-c1">0.814</span>                 <span class="pl-c1">0.812</span>
-<span class="pl-c1">9</span>   <span class="pl-c1">0.40</span>     <span class="pl-c1">0.845</span>                 <span class="pl-c1">0.842</span>
-<span class="pl-c1">10</span>  <span class="pl-c1">0.45</span>     <span class="pl-c1">0.850</span>                 <span class="pl-c1">0.867</span>
-<span class="pl-c1">11</span>  <span class="pl-c1">0.50</span>     <span class="pl-c1">0.900</span>                 <span class="pl-c1">0.889</span>
-<span class="pl-c1">12</span>  <span class="pl-c1">0.55</span>     <span class="pl-c1">0.903</span>                 <span class="pl-c1">0.907</span>
-<span class="pl-c1">13</span>  <span class="pl-c1">0.60</span>     <span class="pl-c1">0.928</span>                 <span class="pl-c1">0.923</span>
-<span class="pl-c1">14</span>  <span class="pl-c1">0.65</span>     <span class="pl-c1">0.949</span>                 <span class="pl-c1">0.937</span>
-<span class="pl-c1">15</span>  <span class="pl-c1">0.70</span>     <span class="pl-c1">0.933</span>                 <span class="pl-c1">0.949</span>
-<span class="pl-c1">16</span>  <span class="pl-c1">0.75</span>     <span class="pl-c1">0.952</span>                 <span class="pl-c1">0.960</span>
-<span class="pl-c1">17</span>  <span class="pl-c1">0.80</span>     <span class="pl-c1">0.974</span>                 <span class="pl-c1">0.970</span>
-<span class="pl-c1">18</span>  <span class="pl-c1">0.85</span>     <span class="pl-c1">0.977</span>                 <span class="pl-c1">0.978</span>
-<span class="pl-c1">19</span>  <span class="pl-c1">0.90</span>     <span class="pl-c1">0.986</span>                 <span class="pl-c1">0.986</span>
-<span class="pl-c1">20</span>  <span class="pl-c1">0.95</span>     <span class="pl-c1">0.995</span>                 <span class="pl-c1">0.993</span>
-<span class="pl-c1">21</span>  <span class="pl-c1">1.00</span>     <span class="pl-c1">1.000</span>                 <span class="pl-c1">1.000</span></pre></div>
+<pre><code><span class="pl-r">Source: local data frame [</span><span class="pl-c1">21</span><span class="pl-r"> x </span><span class="pl-c1">3</span><span class="pl-r">]
+    
+       Prior Posterior Posterior_Theoretical
+       </span><span class="pl-k">&lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt;     &lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt;                 &lt;</span><span class="pl-r">dbl</span><span class="pl-k">&gt;</span><span class="pl-c1">
+    1   0.00     0.000                 0.000
+    2   0.05     0.279                 0.296
+    3   0.10     0.498                 0.471
+    4   0.15     0.587                 0.585
+    5   0.20     0.643                 0.667
+    6   0.25     0.705                 0.727
+    7   0.30     0.778                 0.774
+    8   0.35     0.814                 0.812
+    9   0.40     0.845                 0.842
+    10  0.45     0.850                 0.867
+    11  0.50     0.900                 0.889
+    12  0.55     0.903                 0.907
+    13  0.60     0.928                 0.923
+    14  0.65     0.949                 0.937
+    15  0.70     0.933                 0.949
+    16  0.75     0.952                 0.960
+    17  0.80     0.974                 0.970
+    18  0.85     0.977                 0.978
+    19  0.90     0.986                 0.986
+    20  0.95     0.995                 0.993
+    21  1.00     1.000                 1.000
+</span></code></pre>
 
 Now let's consider a more generic case, where not only $$p$$, but also the number of friends, $$N$$, and the probability that any of them tells you the truth, $$q$$, are not fixed. This analysis will give us the *morality* of this problem, which could be: "Always trust your friends (especially the more you have!), provided that they tell the truth more often than not."
 

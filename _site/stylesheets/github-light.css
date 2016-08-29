@@ -23,8 +23,12 @@ SOFTWARE.
 
 */
 
+.pl-r /* result */ {
+  color: #000000;
+}
+
 .pl-c /* comment */ {
-  color: #969896;
+  color: #559655;
 }
 
 .pl-c1 /* constant, variable.other.constant, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
