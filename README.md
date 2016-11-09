@@ -6,10 +6,12 @@
 + https://www.linkedin.com/in/juanjosecarin
 + https://juanjocarin.github.io
 
+- [ ] xxx
+- [x] xxx
 
 ## PROFESSIONAL PROFILE
 
-After 9 years working in sales, almost 5 of them in a management position, I pursued my dream of being a data scientist: of digging down deep in the data (lots of it and of all kinds) and being able to extract unobserved patterns, infer causality through randomized experiments, and make reliable predictions and well-informed decisions.
+Passionate about data analysis and experiments, mainly focused on user behavior, experience, and engagement, with a solid background in data science and statistics, and extensive experience using data insights to drive business growth.
 
 
 ## EDUCATION
@@ -51,12 +53,11 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 
 ## SKILLS
 
-| Level        | Programming/Stats | Visualization | Big Data      | Others       |
-| :----------- | :---------------- | :------------ | :------------ | :----------- |
-| Advanced     | R                 |               |               | Spanish      |
-| Proficient   | Python, SQL       | Tableau       | Hadoop, MrJob | Git          |
-| Intermediate | SPSS, SAS, Matlab |               | Spark, Storm  | AWS, Bash    |
-| Basic        | EViews, Demetra+  | D3.js         | Hive          | Hugin, Neo4j |
+| Level        | Programming / Stats | Big Data            | Visualization | Others             |
+| :----------- | :------------------ | :------------------ | :------------ | :----------------- |
+| Proficient   | R, Python, SQL      | Hadoop, Hive, MrJob | Tableau       | Git, AWS           |
+| Intermediate | SPSS, SAS, Matlab   | Spark, Storm        |               | Bash               |
+| Basic        | EViews, Demetra+    |                     | D3.js         | Gephi, Neo4j, QGIS |
 
 
 ## EXPERIENCE
@@ -77,8 +78,9 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     
     YOKOGAWA - Madrid, Spain
 
-    + Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets, improving customer training and service quality, and promoting less popular regions and product lines.
-    + Awarded with "100% sales" prize in 2010 and 2011.
+    + Applied analysis of sales and market trends to decide the direction of the department.
+    + Led a team of 7 people.
+    + Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets and improving customer service and training. 
 
 + Apr. 2008 - Jan. 2009: SALES ENGINEER - TEST & MEASUREMENT DEPARTMENT
     
