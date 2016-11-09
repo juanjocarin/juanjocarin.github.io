@@ -51,11 +51,27 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 ## SKILLS
 
-| Level        | Programming / Stats | Big Data            | Visualization | Others             |
-| :----------- | :------------------ | :------------------ | :------------ | :----------------- |
-| Proficient   | R, Python, SQL      | Hadoop, Hive, MrJob | Tableau       | Git, AWS           |
-| Intermediate | SPSS, SAS, Matlab   | Spark, Storm        |               | Bash               |
-| Basic        | EViews, Demetra+    |                     | D3.js         | Gephi, Neo4j, QGIS |
++ Programming / Statistics:
+
+    + Proficient:   R, Python, SQL
+    + Intermediate: SPSS, SAS, Matlab
+    + Basic:        EViews, Demetra+
+
++ Big Data:
+
+    + Proficient:   Hadoop, Hive, MrJob
+    + Intermediate: Spark, Storm
+
++ Visualization:
+
+    + Proficient:   Tableau
+    + Basic:        D3.js
+
++ Others:
+
+    + Proficient:   Git, AWS
+    + Intermediate: Bash
+    + Basic:        Gephi, Neo4j, QGIS
 
 
 ## EXPERIENCE
