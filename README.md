@@ -67,12 +67,14 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
     CONENTO – Madrid, Spain (working remotely)
     
     + Designed and implemented the ETL pipeline for a predictive model of traffic on the main roads in eastern Spain (a project for the Spanish government).
+    + Automated scripts in R to extract, transform, clean (incl. anomaly detection), and load into MySQL data from multiple data sources: road traffic sensors, accidents, road works, weather.
 
 + Jun. 2014 – Sep. 2014: DATA SCIENTIST
     
     CONENTO – Madrid, Spain
 
-    + Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer’s dealer network.
+    + Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer's dealer network.
+    + A matched-pair, cluster-randomized design, which involved selecting the test and control groups from a sample of 50+ cities in Spain (where geo-targeted ads were possible) based on their sales-wise similarity over time, using wavelets (and R).
 
 #### Management – Sales (Electrical Eng.)
 
