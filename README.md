@@ -14,7 +14,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 ## EDUCATION
 
-+ 2016: MASTER OF INFORMATION AND DATA SCIENCE - University of California, Berkeley (GPA: 3.93)
++ 2016: MASTER OF INFORMATION AND DATA SCIENCE – University of California, Berkeley (GPA: 3.93)
     
     Relevant courses:
 
@@ -27,7 +27,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
     + Data Visualization and Communication
     + Research Design and Applications for Data Analysis
 
-+ 2014: M.S. IN STATISTICAL AND COMPUTATIONAL INFORMATION PROCESSING - Universidad Politécnica de Madrid (GPA: 3.69)
++ 2014: M.S. IN STATISTICAL AND COMPUTATIONAL INFORMATION PROCESSING – Universidad Politécnica de Madrid (GPA: 3.69)
     
     Relevant courses:
 
@@ -42,7 +42,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
     + Stochastic Models in Finance
     + Bayesian Networks 
 
-+ 2005: M.S. IN TELECOMMUNICATION ENGINEERING - Universidad Politécnica de Madrid (GPA: 3.03)
++ 2005: M.S. IN TELECOMMUNICATION ENGINEERING – Universidad Politécnica de Madrid (GPA: 3.03)
     
     Focus Area: Radio communication systems (radar and mobile).
 
@@ -62,41 +62,47 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 #### Data Science
 
-+ Jan. 2016 - Mar. 2016: DATA SCIENTIST
++ Jan. 2016 – Mar. 2016: DATA SCIENTIST
     
-    CONENTO - Madrid, Spain (working remotely)
+    CONENTO – Madrid, Spain (working remotely)
     
     + Designed and implemented the ETL pipeline for a predictive model of traffic on the main roads in eastern Spain (a project for the Spanish government).
 
-+ Jun. 2014 - Sep. 2014: DATA SCIENTIST
++ Jun. 2014 – Sep. 2014: DATA SCIENTIST
     
-    CONENTO - Madrid, Spain
+    CONENTO – Madrid, Spain
 
     + Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer’s dealer network.
 
-+ Feb. 2009 - Aug. 2013: HEAD OF SALES, SPAIN & PORTUGAL - TEST & MEASUREMENT DEPARTMENT
+#### Management – Sales (Electrical Eng.)
+
++ Feb. 2009 – Aug. 2013: HEAD OF SALES, SPAIN & PORTUGAL – Test & Measurement dept.
     
-    YOKOGAWA - Madrid, Spain
+    YOKOGAWA – Madrid, Spain
 
     + Applied analysis of sales and market trends to decide the direction of the department.
     + Led a team of 7 people.
     + Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets and improving customer service and training. 
 
-+ Apr. 2008 - Jan. 2009: SALES ENGINEER - TEST & MEASUREMENT DEPARTMENT
+#### Sales (Electrical Eng. & Telecom.)
+
++ Apr. 2008 – Jan. 2009: SALES ENGINEER – Test & Measurement dept.
     
-    YOKOGAWA - Madrid, Spain
+    YOKOGAWA – Madrid, Spain
 
     + Promoted to head of sales after 5 months leading the sales team.
 
-+ Sep. 2004 - Mar. 2008: SALES & APPLICATION ENGINEER
++ Sep. 2004 – Mar. 2008: SALES & APPLICATION ENGINEER
     
-    AYSCOM - Madrid, Spain
+    AYSCOM – Madrid, Spain
 
     + Exceeded sales target every year from 2005 to 2007 (achieved 60% of the target in the first 3 months of 2008).
 
-+ Jul. 2002 - Jun. 2004: TUTOR OF DIFFERENTIAL AND INTEGRAL CALCULUS, PHYSICS, AND DIGITAL ELECTRONIC CIRCUITS
+#### Education
+
++ Jul. 2002 – Jun. 2004: TUTOR OF DIFFERENTIAL AND INTEGRAL CALCULUS, PHYSICS, AND DIGITAL ELECTRONIC CIRCUITS
     
-    ACADEMIA UNIVERSITARIA - Madrid, Spain
+    ACADEMIA UNIVERSITARIA – Madrid, Spain
 
     + Highest-rated professor in student surveys, in 4 of the 6 terms.
     + Increased ratio of students passing the course by 25%.
@@ -106,7 +112,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 (See https://juanjocarin.github.io for additional information.)
 
-### Master of Information and Data Science
+#### Master of Information and Data Science
 
 + 2016: SmartCam (https://smart-cam.github.io/)
     
@@ -144,7 +150,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
     + R
     + A randomized controlled trial in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).
 
-### M.S. in Statistical and Computational Information Processing
+#### M.S. in Statistical and Computational Information Processing
 
 + 2014: Experimental design to measure the impact of online advertising on the sales of a car manufacturer's dealer network (https://goo.gl/15mW5V)
     
