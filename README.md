@@ -6,8 +6,6 @@
 + https://www.linkedin.com/in/juanjosecarin
 + https://juanjocarin.github.io
 
-- [ ] xxx
-- [x] xxx
 
 ## PROFESSIONAL PROFILE
 
@@ -61,6 +59,8 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 
 ## EXPERIENCE
+
+#### Data Science
 
 + Jan. 2016 - Mar. 2016: DATA SCIENTIST
     
