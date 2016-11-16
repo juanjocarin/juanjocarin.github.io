@@ -73,7 +73,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
     
     CONENTO – Madrid, Spain
 
-    + Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer's dealer network.
+    + Designed an experiment for Google Spain to measure the impact of YouTube ads on the sales of a car manufacturer's dealer network.
     + A matched-pair, cluster-randomized design, which involved selecting the test and control groups from a sample of 50+ cities in Spain (where geo-targeted ads were possible) based on their sales-wise similarity over time, using wavelets (and R).
 
 #### Management – Sales (Electrical Eng.)
