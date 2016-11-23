@@ -76,7 +76,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
     + Designed and implemented the ETL pipeline for a predictive model of traffic on the main roads in eastern Spain (a project for the Spanish government).
     + Automated scripts in R to extract, transform, clean (incl. anomaly detection), and load into MySQL data from multiple data sources: road traffic sensors, accidents, road works, weather.
 
-+ Jun. 2014 – Sep. 2014: DATA SCIENTIST
++ Jun. 2014 – Sep. 2014: DATA SCIENTIST (internship)
     
     CONENTO – Madrid, Spain
 
