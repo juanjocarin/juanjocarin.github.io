@@ -54,7 +54,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 | Level        | Programming / Stats | Big Data            | Visualization   | Others             |
 | :----------- | :------------------ | :------------------ | :-------------- | :----------------- |
 | Proficient   | R, Python, SQL      | Hadoop, Hive, MrJob | Tableau, ggplot | Git, AWS           |
-| Intermediate | SPSS, SAS, Matlab   | Spark, Storm        |                 | Bash               |
+| Intermediate | SPSS, SAS, Matlab   | Spark, Storm        | matplotlib      | Bash               |
 | Basic        | EViews, Demetra+    |                     | Shiny, D3.js    | Gephi, Neo4j, QGIS |
 
 
@@ -138,7 +138,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 + 2015: Forest Cover Type Prediction (https://goo.gl/UJhfqh)
     
     + Machine Learning
-    + Python, Scikit-Learn, Matplotlib
+    + Python (scikit-Learn, matplotlib)
     + A Kaggle competition: predictions of the predominant kind of tree cover, from strictly cartographic variables such as elevation and soil type, using random forests, SVMs, kNNs, Naive Bayes, Gradient Descent, GMMs, ...
 
 + 2015: Redefining the job search process (https://goo.gl/8yeXo3)
