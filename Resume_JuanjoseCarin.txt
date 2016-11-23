@@ -64,7 +64,9 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 + Visualization:
 
-    + Proficient:   Tableau
+    + Proficient:   Tableau, ggplot
+    + Intermediate: matplotlib
+    + Basic:        Shiny, D3.js
 
 + Others:
 
