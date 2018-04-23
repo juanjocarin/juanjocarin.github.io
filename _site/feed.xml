@@ -3,10 +3,10 @@
   <channel>
     <title>Juan Jose Carin</title>
     <description>Portfolio website of Juan Jose (aka Juanjo) Carin, data scientist, with info about some of my projects while earning my master's degrees in Information and Data Science, and Statistical and Computational Information Processing.</description>
-    <link>http://juanjose.carin.es/</link>
-    <atom:link href="http://juanjose.carin.es/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 Apr 2018 00:24:38 -0700</pubDate>
-    <lastBuildDate>Mon, 23 Apr 2018 00:24:38 -0700</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 23 Apr 2018 01:06:08 -0700</pubDate>
+    <lastBuildDate>Mon, 23 Apr 2018 01:06:08 -0700</lastBuildDate>
     <generator>Jekyll v3.8.0</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>
 </description>
         <pubDate>Sat, 30 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/30/project-1/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/30/project-1/</guid>
+        <link>http://localhost:4000/2016/04/30/project-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/30/project-1/</guid>
         
         
       </item>
@@ -25,8 +25,8 @@
         <description>
 </description>
         <pubDate>Fri, 29 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/29/project-2/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/29/project-2/</guid>
+        <link>http://localhost:4000/2016/04/29/project-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/29/project-2/</guid>
         
         
       </item>
@@ -36,8 +36,8 @@
         <description>
 </description>
         <pubDate>Thu, 28 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/28/project-3/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/28/project-3/</guid>
+        <link>http://localhost:4000/2016/04/28/project-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/28/project-3/</guid>
         
         
       </item>
@@ -47,8 +47,8 @@
         <description>
 </description>
         <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/27/project-4/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/27/project-4/</guid>
+        <link>http://localhost:4000/2016/04/27/project-4/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/27/project-4/</guid>
         
         
       </item>
@@ -58,8 +58,8 @@
         <description>
 </description>
         <pubDate>Tue, 26 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/26/project-5/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/26/project-5/</guid>
+        <link>http://localhost:4000/2016/04/26/project-5/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/26/project-5/</guid>
         
         
       </item>
@@ -69,8 +69,8 @@
         <description>
 </description>
         <pubDate>Mon, 25 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/25/project-6/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/25/project-6/</guid>
+        <link>http://localhost:4000/2016/04/25/project-6/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/25/project-6/</guid>
         
         
       </item>
@@ -80,8 +80,8 @@
         <description>
 </description>
         <pubDate>Sun, 24 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/24/project-7/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/24/project-7/</guid>
+        <link>http://localhost:4000/2016/04/24/project-7/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/24/project-7/</guid>
         
         
       </item>
@@ -91,8 +91,8 @@
         <description>
 </description>
         <pubDate>Sun, 24 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/24/project-10/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/24/project-10/</guid>
+        <link>http://localhost:4000/2016/04/24/project-10/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/24/project-10/</guid>
         
         
       </item>
@@ -102,8 +102,8 @@
         <description>
 </description>
         <pubDate>Sat, 23 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/23/project-8/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/23/project-8/</guid>
+        <link>http://localhost:4000/2016/04/23/project-8/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/23/project-8/</guid>
         
         
       </item>
@@ -113,8 +113,8 @@
         <description>
 </description>
         <pubDate>Fri, 22 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://juanjose.carin.es/2016/04/22/project-9/</link>
-        <guid isPermaLink="true">http://juanjose.carin.es/2016/04/22/project-9/</guid>
+        <link>http://localhost:4000/2016/04/22/project-9/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/22/project-9/</guid>
         
         
       </item>
