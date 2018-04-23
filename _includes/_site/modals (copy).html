@@ -1,0 +1,55 @@
+ <!-- Portfolio Modals -->
+ {% for post in site.posts %}
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!--<span class="fa-stack fa-2x">
+                            <a href="https://github.com/juanjocarin/W205-Storing-and-Retrieving-Data" class="portfolio-link" data-toggle="modal" target="_blank">
+                            <i class="fa {{ post.img }}"></i></a></span>-->
+                            <h4>{{ post.title }}</h4>
+                            <p class="text-center"><br>{{ post.description }}</p>
+                            <ul class="list-inline item-details">
+                                <li>Course: <strong>{{ post.course }}
+                                    </strong>
+                                </li>
+                                <li>Date: <strong>{{ post.project-date }}
+                                    </strong>
+                                </li><br>
+                                <li>Master: <strong>{{ post.master }}</strong>
+                                </li><br>           
+                                <li>Keywords: <strong>{{ post.keywords }}</strong>
+                                </li><br>
+                                <li>Tools:
+                                    <strong>{{ post.tools }}</strong>
+                                </li>
+                            </ul>
+
+                            <p><a href="{{ post.link1 }}" target="_blank"><strong>{{ post.link1-text }}</strong></a><br>
+                            <a href="{{ post.link2 }}" target="_blank"><strong>{{ post.link2-text }}</strong></a><br>
+                            <a href="{{ post.link3 }}" target="_blank"><strong>{{ post.link3-text }}</strong></a></p>
+                            <!--<ul class="list-inline item-details">
+                                <li><a href="{{ post.link1 }}" target="_blank"><strong>{{ post.link1-text }}</strong></a>
+                                </li>
+                                <li><a href="{{ post.link2 }}" target="_blank"><strong>{{ post.link2-text }}</strong></a>
+                                </li>
+                                <li><a href="{{ post.link3 }}" target="_blank"><strong>{{ post.link3-text }}</strong></a>
+                                </li>
+                            </ul>-->
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

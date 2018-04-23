@@ -2,15 +2,14 @@
 
 + Mountain View, CA 94041
 + 650-336-4590
-+ juanjose.carin@gmail.com
++ juanjose@carin.es
 + https://www.linkedin.com/in/juanjosecarin
-+ https://juanjocarin.github.io
++ http://juanjose.carin.es
 
 
 ## PROFESSIONAL PROFILE
 
-Passionate about data analysis and experiments, mainly focused on user behavior, experience, and engagement, with a solid background in data science and statistics, and extensive experience using data insights to drive business growth.
-
+Passionate about data analysis, machine learning, and experimental design, with a focus on user behavior, experience, and engagement, a solid background in data science and statistics, and extensive experience using data insights to drive business growth.
 
 ## EDUCATION
 
@@ -51,23 +50,22 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 ## SKILLS
 
-| Level        | Programming / Stats | Big Data            | Visualization   | Others             |
-| :----------- | :------------------ | :------------------ | :-------------- | :----------------- |
-| Proficient   | R, Python, SQL      | Hadoop, Hive, MrJob | Tableau, ggplot | Git, AWS           |
-| Intermediate | SPSS, SAS, Matlab   | Spark, Storm        | matplotlib      | Bash               |
-| Basic        | EViews, Demetra+    |                     | Shiny, D3.js    | Gephi, Neo4j, QGIS |
-
+| Level        | Programming / Stats | Big Data            | Visualization   |
+| :----------- | :------------------ | :------------------ | :-------------- |
+| Proficient   | R, Python, SQL      | Hadoop, Hive, MrJob | Tableau, ggplot |
+| Intermediate | SPSS, SAS, Matlab   | Spark, Storm        | matplotlib      |
 
 ## EXPERIENCE
 
 #### Data Science
 
-+ Dec. 2016 – Present: DATA INSIGHTS ANALYST – Search Analytics team
++ Dec. 2016 – Present: DATA SCIENTIST II – Search Analytics team
     
-    YAHOO – Sunnyvale, CA
+    YAHOO / OATH – Sunnyvale, CA
 
     + Design experiments, formulate analysis plans, analyze data, and deliver actionable insights to improve user experience and monetization.
-    + Main tools: Hadoop, Hive, Python, and R.
+    + Obtained the "Productivity Booster" award in May 2017.
+    + Main tools: Hive, Spark, Python, and R.
 
 + Jan. 2016 – Mar. 2016: DATA SCIENTIST
     
@@ -119,7 +117,7 @@ Passionate about data analysis and experiments, mainly focused on user behavior,
 
 ## PROJECTS
 
-(See https://juanjocarin.github.io for additional information.)
+(See http://juanjose.carin.es for additional information.)
 
 #### Master of Information and Data Science
 

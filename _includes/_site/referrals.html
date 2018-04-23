@@ -1,0 +1,79 @@
+<!-- Referrals Section -->
+
+<!--
+<script type="text/javascript">
+$(document).ready(function(){
+     $("#myCarousel").carousel({
+         interval : 3000,
+         pause: false
+     });
+});
+</script>
+-->
+
+    <section id="referrals">
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Referrals</h2>
+                    <h3 class="section-subheading">From my <a href="http://www.linkedin.com/in/juanjosecarin#recommendations" target="_blank">LinkedIn profile</a></h3>
+                </div>
+            </div>
+            {% for post in site.posts %}
+
+                {% if post.referral %}
+
+                {% if post.company contains "Conento" %}
+                    <h4 class="text-center"><span style="font-weight:bold;font-size: 17px;text-transform:none;">{{ post.title }} &ndash; {{ post.company }}</span></h4>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p><em><strong>&laquo;</strong>{{ post.description }}<strong>&raquo;</strong></em></p>
+                        <p><strong><a href="{{ post.linkedin }}" target="_blank">{{ post.person }}</a></strong>, {{ post.position }}.</p>
+                    </div>
+                {% endif %}
+
+                {% if post.company contains "Berkeley" %}
+                    {% if post.person contains "Reiley" %}
+                        <div class="row">
+                        </div>
+                        <h4 class="text-center"><span style="font-weight:bold;font-size: 17px;text-transform:none;"><br>{{ post.title }} &ndash; {{ post.company }}</span></h4>
+                    {% endif %}
+                    {% if post.person contains "Norlander" %}
+                        <div class="row">
+                        </div>
+                    {% endif %}
+                    <div class="col-md-6 portfolio-item text-center">
+                        <p><em><strong>&laquo;</strong>{{ post.description }}<strong>&raquo;</strong></em></p>
+                        <p><strong><a href="{{ post.linkedin }}" target="_blank">{{ post.person }}</a></strong>, {{ post.position }}.</p>                        
+                    </div>
+                {% endif %}
+
+                {% if post.company contains "Politecnica" %}
+                    <div class="row">
+                    </div>
+                    <h4 class="text-center"><span style="font-weight:bold;font-size: 17px;text-transform:none;"><br>{{ post.title }} &ndash; {{ post.company }}</span></h4>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p><em><strong>&laquo;</strong>{{ post.description }}<strong>&raquo;</strong></em></p>
+                        <p><strong><a href="{{ post.linkedin }}" target="_blank">{{ post.person }}</a></strong>, {{ post.position }}.</p>
+                    </div>
+                {% endif %}                    
+
+
+                {% if post.company contains "Yokogawa" %}
+                    {% if post.position contains "client" %}
+                        <div class="row">
+                        </div>
+                        <h4 class="text-center"><span style="font-weight:bold;font-size: 17px;text-transform:none;"><br>{{ post.title }} &ndash; {{ post.company }}</span></h4>
+                    {% endif %}
+                    <div class="col-md-6 portfolio-item text-center">
+                        <p><em><strong>&laquo;</strong>{{ post.description }}<strong>&raquo;</strong></em></p>
+                        <p><strong><a href="{{ post.linkedin }}" target="_blank">{{ post.person }}</a></strong>, {{ post.position }}.</p>
+                    </div>
+                {% endif %}
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+    </section>

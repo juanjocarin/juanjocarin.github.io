@@ -9,8 +9,8 @@ description: "Portfolio website of Juan Jose (aka Juanjo) Carin, data scientist,
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: envelope
-    url: mailto:juanjose.carin@gmail.com
-    description: juanjose.carin@gmail.com
+    url: mailto:juanjose@carin.es
+    description: juanjose@carin.es
   #- title: file-pdf-o 
   #  url: https://drive.google.com/file/d/0B3cqLO1xs1GId3U5b3NsLVVBX1E/view?usp=sharing
   #  description: Resume

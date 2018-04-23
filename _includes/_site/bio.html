@@ -1,0 +1,48 @@
+<!-- Bio Section -->
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+    <section id="bio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Bio</h2>
+                    <!--<h3 class="section-subheading text-muted">About Me.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-justify">
+                    <!--class="large"-->
+                    <p>I am originally from Madrid, Spain, but I moved to the SF Bay Area in February 2015. While I was earning my <a href="http://www.etsit.upm.es/de/studies/telecommunication-engineer-p94.html" target="_blank">master's in Telecommunication Engineering</a>, I worked at Ericsson and later as a tutor of differential and integral calculus, physics, and digital electronic circuits (I love teaching!). After that, I worked 9 years in the Test &amp; Measurement industry: first as a sales engineer at a distributor of T&amp;M solutions (for all kinds of telecom networks: mobile, Ethernet, CaTV, WiFi, ...), and later at Yokogawa (whose oscilloscopes, DAQ systems, and power analyzers are aimed at industries such as energy, transportation, and power electronics; hence I had to move from bits to volts and from dBm to megawatts), where I soon became head of T&amp;M sales for Spain and Portugal. My work mainly involved helping organizations to get data (from telecom networks first, and then from wind farms, solar parks, nuclear plants, transformers, electric motors, and so on) to check that everything worked properly and conforming to standards, and more importantly, to find any problem and its cause. Above all, it meant caring about customers' needs.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-justify" id="fr1">
+                    <!--class="large"-->
+                    <p>I really liked my job, but I also wanted to be in an even more technical position. I've loved math problems<a href="#fn1" name="fr1" class="fn"><sup>[1]</sup></a> and puzzles since I was a kid, and I didn't even have to look for them: if I was at the local Starbucks and saw 14 people using a laptop, 9 (64.3%) of them being a Mac, I found myself wondering if it could be said that the number of Macs was significantly higher than the number of PCs<a href="#fn2" name="fr2" class="fn"><sup>[2]</sup></a>. And I was always trying to get valuable insights from the reduced amount of sales data we had (it was a small market). I eventually realized that I wanted to dig down deeper in the data (lots of it and of all kinds!) and be able to extract unobserved patterns, infer causality through experiments, and make reliable predictions and well-informed decisions; I wanted to be a data scientist. That's why I went back to my <em>alma mater</em> to earn another Master's degree<!--<a href="#fn2" name="fr2" class="fn"><sup>[2]</sup></a>-->, this time in Statistics, and right after that another one in Data Science from UC Berkeley.</p>
+                </div>
+                <div class="anchor" id="fn1"></div>
+                <div class="col-lg-8 col-lg-offset-2 text-justify">
+                    <ol class="smaller">
+                        <li><p class="smaller">Like the "Seattle rain" problem: 
+                        {% for post in site.posts %}
+                            {% if post.title contains "Seattle" %}
+                                click <strong><a class="smaller" href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal" target="_blank">here</a></strong> to read my solution.<!--<a href="#fr1">↩</a>-->{% endif %}{% endfor %}
+                        </p></li>                
+                <div class="anchor" id="fn2"></div>
+                        <li><p class="smaller">It turns out that it only is at the 20% significance level. For such a small sample, 72.0% (11) of the 14 laptops would have to be Macs for their proportion to be significantly higher than 0.5 at the <em>usual</em> 5% level.<br>In any case, that sample, apart from being very small, is not representative of the whole population! With a <strong>random</strong> sample of a thousand laptops, 52.6% of Macs would be enough to say that they are significantly more prevalent than PCs at the 5% level; with a sample of a million laptops, fewer than 50.1% of Macs would be enough. If you are curious about the minimum number of positive cases&mdash;as I was&mdash;, this is the expression I obtained    
+
+                        {% for post in site.posts %}
+                            {% if post.title contains "Demonstration" %}
+                                (click <strong><a class="smaller" href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal" target="_blank">here</a></strong> to read how):{% endif %}{% endfor %} <!--<a href="#fr1">↩</a>-->
+
+                    <br>$$\begin{aligned} N_1 &\geq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{t_{.95,N-1}}{\sqrt{N+t_{.95,N-1}^2-1}}\right) \right \rceil \\ &\simeq  \left \lceil \frac{N}{2} + 0.822 \cdot \sqrt{N} \right \rceil\end{aligned}$$</p>
+                    
+                    <!--<a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a>--></li>
+                        <!--<li><p id="fn2" class="smaller">That program is offered jointly by <em>Universidad Polit&eacute;cnica de Madrid</em> (School of Telecommunications Engineering) and <em>Universidad Complutense de Madrid</em> (Faculty of Mathematics).<a href="#fr1">↩</a></p></li>-->
+                    </ol>
+              
+                    <!--<p><a name="fn1" href="#fr1"><sup>1</sup></a> It turns out that it only is at the 20% significance level. For such a small sample, 72.0% (11) of the 14 laptops would have to be Macs for their proportion to be significantly higher than 0.5 at the <em>usual</em> 5% level. But of course the sample is very small and not representative of the whole population! With a <strong>random</strong> sample of 1,000 laptop users, 52.6% of Macs would be enough to say that they are significantly more common than PCs at the 5% level (with a sample of a million, fewer than 50.1% would be enough). If you&rsquo;re curious about the minimum number of positive cases (as I was), here&rsquo;s the expression I got:
+                    <br />$$N_1 \geq \left \lceil \frac{N}{2} \cdot \left(1 + \frac{t_{.95,N-1}}{\sqrt{N+t_{.95,N-1}^2-1}}\right) \right \rceil$$<a href="#fr1">↩</a></p>-->
+                </div>
+            </div>
+        </div>
+    </section>

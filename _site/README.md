@@ -2,19 +2,18 @@
 
 + Mountain View, CA 94041
 + 650-336-4590
-+ juanjose.carin@gmail.com
++ juanjose@carin.es
 + https://www.linkedin.com/in/juanjosecarin
-+ https://juanjocarin.github.io
++ http://juanjose.carin.es
 
 
 ## PROFESSIONAL PROFILE
 
-After 9 years working in sales, almost 5 of them in a management position, I pursued my dream of being a data scientist: of digging down deep in the data (lots of it and of all kinds) and being able to extract unobserved patterns, infer causality through randomized experiments, and make reliable predictions and well-informed decisions.
-
+Passionate about data analysis, machine learning, and experimental design, with a focus on user behavior, experience, and engagement, a solid background in data science and statistics, and extensive experience using data insights to drive business growth.
 
 ## EDUCATION
 
-+ 2016: MASTER OF INFORMATION AND DATA SCIENCE - University of California, Berkeley (GPA: 3.93)
++ 2016: MASTER OF INFORMATION AND DATA SCIENCE – University of California, Berkeley (GPA: 3.93)
     
     Relevant courses:
 
@@ -27,7 +26,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     + Data Visualization and Communication
     + Research Design and Applications for Data Analysis
 
-+ 2014: M.S. IN STATISTICAL AND COMPUTATIONAL INFORMATION PROCESSING - Universidad Politécnica de Madrid (GPA: 3.69)
++ 2014: M.S. IN STATISTICAL AND COMPUTATIONAL INFORMATION PROCESSING – Universidad Politécnica de Madrid (GPA: 3.69)
     
     Relevant courses:
 
@@ -42,7 +41,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     + Stochastic Models in Finance
     + Bayesian Networks 
 
-+ 2005: M.S. IN TELECOMMUNICATION ENGINEERING - Universidad Politécnica de Madrid (GPA: 3.03)
++ 2005: M.S. IN TELECOMMUNICATION ENGINEERING – Universidad Politécnica de Madrid (GPA: 3.03)
     
     Focus Area: Radio communication systems (radar and mobile).
 
@@ -51,50 +50,66 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 
 ## SKILLS
 
-| Level        | Programming/Stats | Visualization | Big Data      | Others       |
-| :----------- | :---------------- | :------------ | :------------ | :----------- |
-| Advanced     | R                 |               |               | Spanish      |
-| Proficient   | Python, SQL       | Tableau       | Hadoop, MrJob | Git          |
-| Intermediate | SPSS, SAS, Matlab |               | Spark, Storm  | AWS, Bash    |
-| Basic        | EViews, Demetra+  | D3.js         | Hive          | Hugin, Neo4j |
-
+| Level        | Programming / Stats | Big Data            | Visualization   |
+| :----------- | :------------------ | :------------------ | :-------------- |
+| Proficient   | R, Python, SQL      | Hadoop, Hive, MrJob | Tableau, ggplot |
+| Intermediate | SPSS, SAS, Matlab   | Spark, Storm        | matplotlib      |
 
 ## EXPERIENCE
 
-+ Jan. 2016 - Mar. 2016: DATA SCIENTIST
+#### Data Science
+
++ Dec. 2016 – Present: DATA SCIENTIST II – Search Analytics team
     
-    CONENTO - Madrid, Spain (working remotely)
+    YAHOO / OATH – Sunnyvale, CA
+
+    + Design experiments, formulate analysis plans, analyze data, and deliver actionable insights to improve user experience and monetization.
+    + Obtained the "Productivity Booster" award in May 2017.
+    + Main tools: Hive, Spark, Python, and R.
+
++ Jan. 2016 – Mar. 2016: DATA SCIENTIST
+    
+    CONENTO – Madrid, Spain (working remotely from the U.S.)
     
     + Designed and implemented the ETL pipeline for a predictive model of traffic on the main roads in eastern Spain (a project for the Spanish government).
+    + Automated scripts in R to extract, transform, clean (incl. anomaly detection), and load into MySQL data from multiple data sources: road traffic sensors, accidents, road works, weather.
 
-+ Jun. 2014 - Sep. 2014: DATA SCIENTIST
++ Jun. 2014 – Sep. 2014: DATA SCIENTIST (internship)
     
-    CONENTO - Madrid, Spain
+    CONENTO – Madrid, Spain
 
-    + Designed an experiment for Google Spain (conducted in October 2014) to measure the impact of YouTube ads on the sales of a car manufacturer’s dealer network.
+    + Designed an experiment for Google Spain to measure the impact of YouTube ads on the sales of a car manufacturer's dealer network.
+    + A matched-pair, cluster-randomized design, which involved selecting the test and control groups from a sample of 50+ cities in Spain (where geo-targeted ads were possible) based on their sales-wise similarity over time, using wavelets (and R).
 
-+ Feb. 2009 - Aug. 2013: HEAD OF SALES, SPAIN & PORTUGAL - TEST & MEASUREMENT DEPARTMENT
+#### Management – Sales (Electrical Eng.)
+
++ Feb. 2009 – Aug. 2013: HEAD OF SALES, SPAIN & PORTUGAL – Test & Measurement dept.
     
-    YOKOGAWA - Madrid, Spain
+    YOKOGAWA – Madrid, Spain
 
-    + Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets, improving customer training and service quality, and promoting less popular regions and product lines.
-    + Awarded with "100% sales" prize in 2010 and 2011.
+    + Applied analysis of sales and market trends to decide the direction of the department.
+    + Led a team of 7 people.
+    + Increased revenue by 6.3%, gross profit by 4.2%, and operating income by 146%, and achieved a 30% ratio of new customers (3x growth), by entering new markets and improving customer service and training. 
 
-+ Apr. 2008 - Jan. 2009: SALES ENGINEER - TEST & MEASUREMENT DEPARTMENT
+#### Sales (Electrical Eng. & Telecom.)
+
++ Apr. 2008 – Jan. 2009: SALES ENGINEER – Test & Measurement dept.
     
-    YOKOGAWA - Madrid, Spain
+    YOKOGAWA – Madrid, Spain
 
     + Promoted to head of sales after 5 months leading the sales team.
 
-+ Sep. 2004 - Mar. 2008: SALES & APPLICATION ENGINEER
++ Sep. 2004 – Mar. 2008: SALES & APPLICATION ENGINEER
     
-    AYSCOM - Madrid, Spain
+    AYSCOM – Madrid, Spain
 
     + Exceeded sales target every year from 2005 to 2007 (achieved 60% of the target in the first 3 months of 2008).
 
-+ Jul. 2002 - Jun. 2004: TUTOR OF DIFFERENTIAL AND INTEGRAL CALCULUS, PHYSICS, AND DIGITAL ELECTRONIC CIRCUITS
+#### Education
+
++ Jul. 2002 – Jun. 2004: TUTOR OF DIFFERENTIAL AND INTEGRAL CALCULUS, PHYSICS, AND DIGITAL ELECTRONIC CIRCUITS
     
-    ACADEMIA UNIVERSITARIA - Madrid, Spain
+    ACADEMIA UNIVERSITARIA – Madrid, Spain
 
     + Highest-rated professor in student surveys, in 4 of the 6 terms.
     + Increased ratio of students passing the course by 25%.
@@ -102,9 +117,9 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 
 ## PROJECTS
 
-(See https://juanjocarin.github.io for additional information.)
+(See http://juanjose.carin.es for additional information.)
 
-### Master of Information and Data Science
+#### Master of Information and Data Science
 
 + 2016: SmartCam (https://smart-cam.github.io/)
     
@@ -121,7 +136,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
 + 2015: Forest Cover Type Prediction (https://goo.gl/UJhfqh)
     
     + Machine Learning
-    + Python, Scikit-Learn, Matplotlib
+    + Python (scikit-Learn, matplotlib)
     + A Kaggle competition: predictions of the predominant kind of tree cover, from strictly cartographic variables such as elevation and soil type, using random forests, SVMs, kNNs, Naive Bayes, Gradient Descent, GMMs, ...
 
 + 2015: Redefining the job search process (https://goo.gl/8yeXo3)
@@ -142,7 +157,7 @@ After 9 years working in sales, almost 5 of them in a management position, I pur
     + R
     + A randomized controlled trial in which 300+ participants were assigned to a control group or one of two test groups to evaluate the effect of competition (being compared to no one or someone better or worse).
 
-### M.S. in Statistical and Computational Information Processing
+#### M.S. in Statistical and Computational Information Processing
 
 + 2014: Experimental design to measure the impact of online advertising on the sales of a car manufacturer's dealer network (https://goo.gl/15mW5V)
     
