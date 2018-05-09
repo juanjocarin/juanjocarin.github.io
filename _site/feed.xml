@@ -5,15 +5,15 @@
     <description>Portfolio website of Juan Jose (aka Juanjo) Carin, data scientist, with info about some of my projects while earning my master's degrees in Information and Data Science, and Statistical and Computational Information Processing.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 23 Apr 2018 01:06:08 -0700</pubDate>
-    <lastBuildDate>Mon, 23 Apr 2018 01:06:08 -0700</lastBuildDate>
+    <pubDate>Wed, 09 May 2018 20:47:01 +0200</pubDate>
+    <lastBuildDate>Wed, 09 May 2018 20:47:01 +0200</lastBuildDate>
     <generator>Jekyll v3.8.0</generator>
     
       <item>
         <title>SmartCam</title>
         <description>
 </description>
-        <pubDate>Sat, 30 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Sat, 30 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/30/project-1/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/30/project-1/</guid>
         
@@ -24,7 +24,7 @@
         <title>Shortest Path and PageRank algorithms applied to the Wikipedia graph dataset</title>
         <description>
 </description>
-        <pubDate>Fri, 29 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/29/project-2/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/29/project-2/</guid>
         
@@ -35,7 +35,7 @@
         <title>Forest Cover Type Prediction</title>
         <description>
 </description>
-        <pubDate>Thu, 28 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Thu, 28 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/28/project-3/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/28/project-3/</guid>
         
@@ -46,7 +46,7 @@
         <title>Redefining the job search process</title>
         <description>
 </description>
-        <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/27/project-4/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/27/project-4/</guid>
         
@@ -57,7 +57,7 @@
         <title>A fresh perspective on Citi Bike</title>
         <description>
 </description>
-        <pubDate>Tue, 26 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Tue, 26 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/26/project-5/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/26/project-5/</guid>
         
@@ -68,7 +68,7 @@
         <title>Investigating the Effect of Competition on the Ability to Solve Arithmetic Problems</title>
         <description>
 </description>
-        <pubDate>Mon, 25 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Mon, 25 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/25/project-6/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/25/project-6/</guid>
         
@@ -79,7 +79,7 @@
         <title>Experimental design to measure the impact of online advertising on the sales of a car manufacturer’s dealer network</title>
         <description>
 </description>
-        <pubDate>Sun, 24 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/24/project-7/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/24/project-7/</guid>
         
@@ -90,7 +90,7 @@
         <title>Demonstration</title>
         <description>
 </description>
-        <pubDate>Sun, 24 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/24/project-10/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/24/project-10/</guid>
         
@@ -101,7 +101,7 @@
         <title>Prediction of customer churn for a mobile network carrier</title>
         <description>
 </description>
-        <pubDate>Sat, 23 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Sat, 23 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/23/project-8/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/23/project-8/</guid>
         
@@ -112,7 +112,7 @@
         <title>Different models of Harmonized Index of Consumer Prices (HICP) in Spain</title>
         <description>
 </description>
-        <pubDate>Fri, 22 Apr 2016 00:00:00 -0700</pubDate>
+        <pubDate>Fri, 22 Apr 2016 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2016/04/22/project-9/</link>
         <guid isPermaLink="true">http://localhost:4000/2016/04/22/project-9/</guid>
         
